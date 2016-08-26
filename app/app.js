@@ -1,8 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('myApp', ['ui.router', 'myApp.utils', 'myApp.fightPurchase', 'myApp.optproduct'])
-        // angular.module('myApp', ['ui.router'])
+    angular.module('myApp', ['ui.router', 'myApp.utils', 'myApp.fightPurchase', 'myApp.optproduct', 'myApp.cloudSaid'])
         .run(function ($rootScope, $window) {
 
             $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
@@ -40,45 +39,28 @@
             $stateProvider
                 .state('home', {
                     url: '/home',
-                    views: {
-                        '': {
-                            templateUrl: 'home.html'
-                        }
-                    },
+                    templateUrl: 'home.html',
                     data: {
                         pageTitle: "营销系统首页"
                     }
                 })
                 .state('main', {
                     abstract: true,
-                    url: '/main',
-                    views: {
-                        '': {
-                            templateUrl: 'main.html'
-                        }
-                    },
+                    templateUrl: 'main.html',
                     data: {
                         pageTitle: "内容页面"
                     }
                 })
                 .state('500', {
                     url: '/500',
-                    views: {
-                        '': {
-                            templateUrl: '500.html'
-                        }
-                    },
+                    templateUrl: '500.html',
                     data: {
                         pageTitle: "500"
                     }
                 })
                 .state('404', {
                     url: '/404',
-                    views: {
-                        '': {
-                            templateUrl: '404.html'
-                        }
-                    },
+                    templateUrl: '404.html',
                     data: {
                         pageTitle: "404"
                     }

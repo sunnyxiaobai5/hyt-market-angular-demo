@@ -1,0 +1,164 @@
+<link rel="stylesheet" href="assets/css/pg_shangpin.css"/>
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+
+<div class="main-content min_width">
+    <div class="breadcrumbs" id="breadcrumbs">
+        <div class="nav_suoyin">
+            <span>
+                <i class=""></i>
+                <a href="javascript:void(0)" class="cleardecor">云说</a>
+            </span>
+            >
+            <span>
+                <i class=""></i>
+                <a href="cloudSaidManage.html" class="cleardecor">云说管理</a>
+            </span>
+        </div>
+    </div>
+    <div class="shangpin_content">
+        <!-- 右侧顶部内容 -->
+        <a href="cloudSaidManage-edit.html" class="add_shangpin">新增云说</a>
+        <p class="pingou_title">云说查询</p>
+        <P class="shangpin_select">
+            <span><input type="text" placeholder="云说关键字"></span>
+            <input type="button" value="查询" class="td_btn">
+        </P>
+        <!-- 右侧顶部内容 end-->
+        <!-- 右侧主要内容 -->
+        <p class="pingou_title">云说列表</p>
+        <div class="shangpin_tishi">
+            查找的商品没找到，请重新查找！
+        </div>
+        <table class="table table-bordered">
+            <thead>
+            <th>标题</th>
+            <th>发布时间</th>
+            <th>浏览次数</th>
+            <th>推送时间</th>
+            <th>操作</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>红毛烧52度纯醸</td>
+                <td>2016-02-02 22:22:22</td>
+                <td>1</td>
+                <td>2016-02-02 22:22:22</td>
+                <td>
+                    <a href="#" class=" ">编辑&nbsp;|</a>
+                    <a href="javascript:void(0)" class="blue">删除</a>
+                </td>
+            <tr>
+            <tr>
+                <td>红毛烧52度纯醸</td>
+                <td>2016-02-02 22:22:22</td>
+                <td>1</td>
+                <td>2016-02-02 22:22:22</td>
+                <td>
+                    <a href="#" class=" ">编辑&nbsp;|</a>
+                    <a href="javascript:void(0)" class="blue">删除</a>
+                </td>
+            <tr>
+            <tr>
+                <td>红毛烧52度纯醸</td>
+                <td>2016-02-02 22:22:22</td>
+                <td>1</td>
+                <td><a href="javascript:void(0)" class="yunshuo_ts_a">推送</a></td>
+                <td>
+                    <a href="#" class=" ">编辑&nbsp;|</a>
+                    <a href="javascript:void(0)" class="blue">删除</a>
+                </td>
+            <tr>
+            <tr>
+                <td>红毛烧52度纯醸</td>
+                <td>2016-02-02 22:22:22</td>
+                <td>1</td>
+                <td><a href="javascript:void(0)" class="yunshuo_ts_a">推送</a></td>
+                <td>
+                    <a href="#" class=" ">编辑&nbsp;|</a>
+                    <a href="javascript:void(0)" class="blue">删除</a>
+                </td>
+            <tr>
+            <tr>
+                <td>红毛烧52度纯醸</td>
+                <td>2016-02-02 22:22:22</td>
+                <td>1</td>
+                <td><a href="javascript:void(0)" class="yunshuo_ts_a">推送</a></td>
+                <td>
+                    <a href="#" class=" ">编辑&nbsp;|</a>
+                    <a href="javascript:void(0)" class="blue">删除</a>
+                </td>
+            <tr>
+            </tbody>
+        </table>
+        <!-- 右侧主要内容 end -->
+        <!-- 右侧底部内容 -->
+        <div class="shangpin_bottom">
+            <div class="bottom_right dingdan_bottom_suoyin">
+                <!-- 结构索引 -->
+                <ul class="pagination">
+                    <li class="disabled">
+                        <a href="#">
+                            《
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            》
+                        </a>
+                    </li>
+                </ul>
+                <!-- 结构索引 end-->
+            </div>
+        </div>
+        <!-- 右侧底部内容结束 -->
+    </div>
+</div>
+
+<!--[if lte IE 8]>
+<script src="assets/js/excanvas.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+    $(function () {
+        $('.yunshuo_ts_a').click(function () {
+            var val = getDates();
+            $(this).css('display', 'none').closest('td').text(val);
+        });
+    });
+    function getDates() {
+        var d, vYear, vMon, vDay, h, m, se, s;
+        d = new Date()
+        vYear = d.getFullYear()
+        vMon = d.getMonth() + 1
+        vDay = d.getDate()
+        h = d.getHours();
+        m = d.getMinutes();
+        se = d.getSeconds();
+        s = vYear + "-" + (vMon < 10 ? "0" + vMon : vMon) + "-" + (vDay < 10 ? "0" + vDay : vDay) + " " + (h < 10 ? "0" + h : h) + ":" + (m < 10 ? "0" + m : m) + ":" + (se < 10 ? "0" + se : se);
+        return s;
+    }
+</script>

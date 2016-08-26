@@ -19,7 +19,7 @@
                         {name: '优品管理', state: 'optproduct.menu_1', icon: 'icon-dashboard'}
                     ],
                     [
-                        {name: '云说管理'}
+                        {name: '云说管理', state: 'cloudSaid.menu_1', icon: 'icon-dashboard'}
                     ],
                     [
                         {name: '券包管理'},
@@ -50,7 +50,7 @@
                         case 'optproduct':
                             $scope.menus = menus[1];
                             break;
-                        case 'nothing':
+                        case 'cloudSaid':
                             $scope.menus = menus[2];
                             break;
                         case 'nothing':

@@ -6,7 +6,6 @@
         .config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
 
             $urlRouterProvider.when("/main", "/main/fightPurchase/menu_1");
-
             $urlRouterProvider.when("/main/fightPurchase", "/main/fightPurchase/menu_1");
 
             $stateProvider

@@ -6,7 +6,6 @@
         .config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
 
             $urlRouterProvider.when("/main", "/main/optproduct/menu_1");
-
             $urlRouterProvider.when("/main/optproduct", "/main/optproduct/menu_1");
 
             $stateProvider
@@ -31,7 +30,7 @@
                     url: '/edit',
                     views: {
                         'content@main': {
-                            templateUrl: 'html/optproduct/optproductEdit.html'
+                            templateUrl: 'html/optproduct/optproductManage-edit.html'
                         }
                     },
                     data: {

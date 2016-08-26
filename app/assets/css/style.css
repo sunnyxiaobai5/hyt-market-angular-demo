@@ -84,7 +84,6 @@ div.nav_content > a {
     text-align: center;
     cursor: pointer;
     text-decoration: none;
-
 }
 
 div.nav_content > a:hover, .nav_content > .active {
@@ -92,9 +91,22 @@ div.nav_content > a:hover, .nav_content > .active {
     border: 1px solid #C8C8C8;
 }
 
-.nav-list > list > .active {
+.nav-list > li > .active {
     background-color: #FFF;
     color: #1963aa
+}
+
+.nav-list > li > .active:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    max-width: 3px;
+    overflow: hidden;
+    background-color: #3382af
 }
 
 /*右边部分*/

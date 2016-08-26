@@ -1,0 +1,325 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dth HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dth">
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>购物送券</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/ace.min.css" />
+	<link rel="stylesheet" href="css/pg_shangpin.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- <link rel="stylesheet" href="css/ace-rtl.min.css" />
+	-->
+	<link rel="stylesheet" href="css/zz.css" />
+	<link rel="stylesheet" href="css/youhuiquan.css" />
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+	<![endif]-->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- head -->
+	<div class="nav_daohang">
+		<div class="nav_1">
+			<a href="#">营销系统</a>
+		</div>
+		<div class="nav_content">
+			<a class="a_active" href="pg_setwenan.html">拼购</a>
+			<a href="youpin_bgo.html">优品</a>
+			<a href="yunshuo_bgo.html">云说</a>
+			<a href="#">抢购</a>
+			<a href="youhuiquan_bgo.html">优惠券</a>
+		</div>
+		<div class="nav_2">
+			<img src="images/PCimg/icon_sb.jpg">
+			<span>
+				好运妹一号
+				<small></small>
+			</span>
+			<img class="dsj" src="images/dsj.png">
+			<ul class="nav_shezhi">
+				<li>
+					<a href="#">
+						<img src="images/shezhi.png">设置</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/zhuye.png">主页</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/tuichu.png">退出</a>
+				</li>
+			</ul>
+		</div>
+		<div class="nav_clear"></div>
+	</div>
+	<!--end head -->
+	<div class="main-container min__width" id="main-container">
+		<!--左侧菜单 Start-->
+		<div class="main-container-inner">
+			<div class="sidebar" id="sidebar">
+				<!-- zca_active为选中样式 -->
+				<ul class="nav nav-list">
+					<li>
+						<a href="youhuiquan_bgo.html" class="dropdown-toggle"> <i class="icon-cogs"></i>
+							<span class="menu-text">券包管理</span>
+						</a>
+					</li>
+					<li>
+						<a href="register_give.html" class="dropdown-toggle "> <i class="icon-tag"></i>
+							<span class="menu-text">注册送券</span>
+						</a>
+					</li>
+					<li>
+						<a href="buy_give.html" class="dropdown-toggle zca_active">
+							<i class="icon-tags"></i>
+							<span class="menu-text">购物送券</span>
+						</a>
+					</li>
+					<li>
+						<a href="youhuiquan_hezuo.html" class="dropdown-toggle">
+							<i class="icon-tasks"></i>
+							<span class="menu-text">渠道合作</span>
+						</a>
+					</li>
+					<li>
+						<a href="expository.html" class="dropdown-toggle">
+							<i class="icon-bullhorn"></i>
+							<span class="menu-text">优惠券使用说明</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--左侧菜单 End-->
+
+		<div class="main-content min_width">
+			<div class="breadcrumbs" id="breadcrumbs">
+				<div class="nav_suoyin">
+					<span>
+						<i class=""></i>
+						<a href="javascript:void(0)" class="cleardecor">优惠券</a>
+					</span>
+					>
+					<span>
+						<i class=""></i>
+						<a href="register_give.html" class="cleardecor">购物送券</a>
+					</span>
+				</div>
+			</div>
+			<div class="shangpin_content">
+				<!-- 主体内容 -->
+				<div class="register_on">
+					是否启用：
+					<div class="check_off">
+						<div id="div_off" class="open1">
+				        	<div id="div_on" class="open2"></div>
+				        </div>
+				        <input type="checkbox">
+					</div>
+				</div>
+				<div class="register_check">
+					发放内容：
+					<select name="" id="">
+						<option>券包名称1</option>
+						<option>券包名称2</option>
+						<option>券包名称3</option>
+						<option>券包名称4</option>
+					</select>
+				</div>
+				<div class="check_one">
+					<input type="checkbox" name="">
+					需订单满
+					<input class="man_dor" type="text">元</div>
+				<div class="check_one">
+					<input type="checkbox" id="ifcheck" name="">
+					选择购买指定商品送券
+					<span class="ifcheck_contai" style="display:none">
+						<input type="button" value="选择商品" id="check_goods" class="hz_btn">
+						<span class="check_goods">
+							已选
+							<span class="check_number">0</span>
+							件商品
+						</span>
+					</span>
+					<div class="check_img_list" style="display:none">
+						<ul></ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="register_btn">
+					<input type="button" name="" class="hz_btn" value="保存"></div>
+				<!-- 主体内容结束 -->
+			</div>
+		</div>
+	</div>
+	<!-- 删除提示模态窗口 -->
+	<div class="modal fade" id="scqrmodal" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog" style="width: 982px;">
+			<div class="modal-content">
+				<div class="modal-head">
+					<div class="lianjie_select_text" style="padding-left: 45px;padding-top: 20px">
+						<input type="text">
+						<input type="button" class="hz_btn" value="查询"></div>
+				</div>
+				<div class="modal-body">
+
+					<div class="lianjie_select_rq2" style="padding-bottom: 0px;">
+
+						<div class="select_content_tishi none text-center" style="display: none;">不好意思，您搜索的商品不存在！</div>
+						<ul class="btn_cx_sp none" style="display: block;">
+							<li>
+								<img class="imgsrc" src="images/s_p02.jpg" alt="">
+								<p>红毛烧-52度极品红毛烧-52度极品红毛烧-52度极品</p>
+								<input type="button" data-goodsid="123a456" value="选择"></li>
+							<li>
+								<img class="imgsrc" src="images/s_p02.jpg" alt="">
+								<p>红毛烧-52度极品红毛烧-52度极品红毛烧-52度极品</p>
+								<input type="button" data-goodsid="1234q56" value="选择"></li>
+							<li>
+								<img class="imgsrc" src="images/s_p02.jpg" alt="">
+								<p>红毛烧-52度极品红毛烧-52度极品红毛烧-52度极品</p>
+								<input type="button" data-goodsid="1234r56" value="选择"></li>
+							<li>
+								<img class="imgsrc" src="images/s_p02.jpg" alt="">
+								<p>红毛烧-52度极品红毛烧-52度极品红毛烧-52度极品</p>
+								<input type="button" data-goodsid="1234gh56" value="选择"></li>
+							<li>
+								<img class="imgsrc" src="images/s_p02.jpg" alt="">
+								<p>红毛烧-52度极品红毛烧-52度极品红毛烧-52度极品</p>
+								<input type="button" data-goodsid="123bv456" value="选择"></li>
+							<li>
+								<img class="imgsrc" src="images/s_p02.jpg" alt="">
+								<p>红毛烧-52度极品红毛烧-52度极品红毛烧-52度极品</p>
+								<input type="button" data-goodsid="123kj56" value="选择"></li>
+							<li>
+								<img class="imgsrc" src="images/s_p02.jpg" alt="">
+								<p>红毛烧-52度极品红毛烧-52度极品红毛烧-52度极品</p>
+								<input type="button" data-goodsid="1234ws56" value="选择"></li>
+							<li>
+								<img class="imgsrc" src="images/s_p02.jpg" alt="">
+								<p>红毛烧-52度极品红毛烧-52度极品红毛烧-52度极品</p>
+								<input type="button" data-goodsid="12e3qe456" value="选择"></li>
+							<li>
+								<img class="imgsrc" src="images/s_p02.jpg" alt="">
+								<p>红毛烧-52度极品红毛烧-52度极品红毛烧-52度极品</p>
+								<input type="button" data-goodsid="12yyy3456" value="选择"></li>
+							<li>
+								<img class="imgsrc" src="images/s_p02.jpg" alt="">
+								<p>红毛烧-52度极品红毛烧-52度极品红毛烧-52度极品</p>
+								<input type="button" data-goodsid="123iii456" value="选择"></li>
+						</ul>
+						<div class="shangpin_bottom btn_cx_sp none" style="display: block;">
+							<div class="text-right">
+								<!-- 结构索引 -->
+								<ul class="pagination">
+									<li class="disabled">
+										<a href="#">《</a>
+									</li>
+									<li class="active">
+										<a href="#">1</a>
+									</li>
+
+									<li>
+										<a href="#">2</a>
+									</li>
+
+									<li>
+										<a href="#">3</a>
+									</li>
+
+									<li>
+										<a href="#">4</a>
+									</li>
+
+									<li>
+										<a href="#">5</a>
+									</li>
+
+									<li>
+										<a href="#">》</a>
+									</li>
+								</ul>
+								<!-- 结构索引 end-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer modal_dibu">
+					<button type="button" class="hz_btn" id="submit_goods">关闭</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	<!-- 删除提示模态窗口 end-->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<!--[if lte IE 8]>
+	<script src="assets/js/excanvas.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript">
+	$(function(){
+			//显示商品选择弹出框
+			$("#check_goods").click(function(){
+				$('#scqrmodal').modal();
+			})
+			// 关闭商品选择框
+			$('#submit_goods').click(function(){
+				$('#scqrmodal').modal('hide');
+			});
+			// 选择商品
+			$(".btn_cx_sp li").click(function(){
+				if($(this).find('input').hasClass("input_active")){
+					// 取消选择
+					$(this).find('input').removeClass("input_active").val("选择");
+					var id = $(this).find('input').data("goodsid");
+					$("#"+id).remove();
+				}else{
+					//选择
+					$(this).find('input').addClass('input_active').val("已选择");
+					var goodinfo = {};
+					goodinfo.imgsrc = $(this).find('input').siblings("img").attr("src");
+					goodinfo.goodsid = $(this).find('input').data("goodsid");
+					var html = "<li id='"+goodinfo.goodsid+"'><img src='"+goodinfo.imgsrc+"'><span>删除</span></li>"
+					$(".check_img_list ul").append(html);
+				}
+				// 计算已经选择的商品个数
+				$(".check_number").text($(".check_img_list ul li").length);
+			})
+			// 删除选中商品
+			$(".check_img_list").on("click","span",function(){
+				$(this).parent().remove();
+				$(".check_number").text($(".check_img_list ul li").length);
+			})
+			// 是否选择购买指定商品送券
+			$("#ifcheck").change(function(){
+				if($(this).prop("checked")){
+					$(".ifcheck_contai,.check_img_list").show();
+				}else{
+					$(".ifcheck_contai,.check_img_list").hide();
+				}
+			})
+			// 开关
+			var div_off=$("#div_off");
+			var div_on=$("#div_on");
+			div_off.click(function(){
+				div_off[0].className=(div_off[0].className=="close1")?"open1":"close1";
+				div_on[0].className=(div_on[0].className=="close2")?"open2":"close2";
+			});
+	});
+</script>
+
+</body>
+
+</html>

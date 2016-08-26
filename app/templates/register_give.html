@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dth HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dth">
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>注册送券</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/ace.min.css" />
+	<link rel="stylesheet" href="css/pg_shangpin.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- <link rel="stylesheet" href="css/ace-rtl.min.css" />-->
+	<link rel="stylesheet" href="css/zz.css" />
+	<link rel="stylesheet" href="css/youhuiquan.css" />
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+	<![endif]-->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- head -->
+	<div class="nav_daohang">
+		<div class="nav_1">
+			<a href="#">营销系统</a>
+		</div>
+		<div class="nav_content">
+			<a class="a_active" href="pg_setwenan.html">拼购</a>
+			<a href="youpin_bgo.html">优品</a>
+			<a href="yunshuo_bgo.html">云说</a>
+			<a href="#">抢购</a>
+			<a href="youhuiquan_bgo.html">优惠券</a>
+		</div>
+		<div class="nav_2">
+			<img src="images/PCimg/icon_sb.jpg">
+			<span>
+				好运妹一号
+				<small></small>
+			</span>
+			<img class="dsj" src="images/dsj.png">
+			<ul class="nav_shezhi">
+				<li>
+					<a href="#">
+						<img src="images/shezhi.png">设置</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/zhuye.png">主页</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/tuichu.png">退出</a>
+				</li>
+			</ul>
+		</div>
+		<div class="nav_clear"></div>
+	</div>
+	<!--end head -->
+	<div class="main-container min__width" id="main-container">
+		<!--左侧菜单 Start-->
+		<div class="main-container-inner">
+		<div class="sidebar" id="sidebar"><!-- zca_active为选中样式 -->
+			<ul class="nav nav-list">
+				<li>
+					<a href="youhuiquan_bgo.html" class="dropdown-toggle">
+						<i class="icon-cogs"></i>
+						<span class="menu-text"> 券包管理 </span>
+					</a>
+				</li>
+				<li>
+					<a href="register_give.html" class="dropdown-toggle zca_active"> <i class="icon-tag"></i>
+						<span class="menu-text">注册送券</span>
+					</a>
+				</li>
+				<li>
+					<a href="buy_give.html" class="dropdown-toggle"> <i class="icon-tags"></i>
+						<span class="menu-text">购物送券</span>
+					</a>
+				</li>
+				<li>
+					<a href="youhuiquan_hezuo.html" class="dropdown-toggle"> <i class="icon-tasks"></i>
+						<span class="menu-text">渠道合作</span>
+					</a>
+				</li>
+				<li>
+					<a href="expository.html" class="dropdown-toggle"> <i class="icon-bullhorn"></i>
+						<span class="menu-text">优惠券使用说明</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--左侧菜单 End-->
+
+	<div class="main-content min_width">
+		<div class="breadcrumbs" id="breadcrumbs">
+		<div class="nav_suoyin">
+			<span> <i class=""></i>
+				<a href="javascript:void(0)" class="cleardecor">优惠券</a>
+			</span>
+			>
+			<span>
+				<i class=""></i>
+				<a href="register_give.html" class="cleardecor">注册送券</a>
+			</span>
+		</div>
+	</div>
+	<div class="shangpin_content">
+		<!-- 主体内容 -->
+		<div class="register_on">
+			是否启用：
+			<div class="check_off">
+				<div id="div_off" class="open1">
+		        	<div id="div_on" class="open2"></div>
+		        </div>
+		        <input id="make_on" type="hidden" value="on">
+			</div>
+		</div>
+		<div class="register_check">
+			发放内容：
+			<select name="" id="">
+				<option>券包名称1</option>
+				<option>券包名称2</option>
+				<option>券包名称3</option>
+				<option>券包名称4</option>
+			</select>
+		</div>
+		<div class="register_btn"><input type="button" name="" class="hz_btn" value="保存"></div>
+		<!-- 主体内容结束 -->
+	</div>
+</div>
+</div>
+<!-- 删除提示模态窗口 -->
+<div class="modal fade" id="scqrmodal" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog">
+	<div class="modal-content ljff_max_width">
+		<div class="modal-body">
+			<div class="panel-body text-center">确定要删除此记录吗？</div>
+		</div>
+		<div class="modal-footer modal_dibu">
+			<button type="button" class="btn btn-primary">确定</button>
+			<button type="button" class="btn btn-default sc_quxiao">取消</button>
+		</div>
+	</div>
+	<!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!-- 删除提示模态窗口 end-->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--[if lte IE 8]>
+<script src="assets/js/excanvas.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+	$(function(){
+		//弹出框
+		$('.sc_btn').click(function(){
+            $('#scqrmodal').modal();
+        });
+		$('.sc_quxiao').click(function(){
+			$('#scqrmodal').modal('hide');
+		});
+		// 开关
+		var div_off=$("#div_off");
+		var div_on=$("#div_on");
+		div_off.click(function(){
+			div_off[0].className=(div_off[0].className=="close1")?"open1":"close1";
+			div_on[0].className=(div_on[0].className=="close2")?"open2":"close2";
+		});
+	});
+</script>
+
+</body>
+
+</html>

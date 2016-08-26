@@ -1,0 +1,7 @@
+.wenan_content{margin-top:10px;}
+.wenan_content tbody>tr>td{height:60px;line-height:60px;vertical-align:middle;border-top:none;}
+.wenan_content tbody>tr>td:first-child{width:150px;}
+.td_width{width:620px;}
+.td_font{color:#999;min-width:185px;}
+
+input[type=text]{width:600px;height:40px;}

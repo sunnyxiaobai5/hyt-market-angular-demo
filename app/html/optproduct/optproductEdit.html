@@ -1,0 +1,464 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dth HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dth">
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>优品管理</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/ace.min.css" />
+<link rel="stylesheet" href="css/pg_shangpin.css" />
+<link rel="stylesheet" href="css/style.css" />
+<!-- <link rel="stylesheet" href="css/ace-rtl.min.css" /> -->
+<link rel="stylesheet" href="css/zz.css" />
+<link rel="stylesheet" href="css/jquery.editable-select.min.css" />
+<!--[if lte IE 8]>
+  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- head -->
+<div class="nav_daohang">
+	<div class="nav_1"><a href="#">营销系统</a></div>
+	<div class="nav_content">
+		<a class="a_active" href="pg_setwenan.html">拼购</a>
+		<a href="optproductManage.html">优品</a>
+		<a href="yunshuo_bgo.html">云说</a>
+		<a href="#">抢购</a>
+		<a href="youhuiquan_bgo.html">优惠券</a>
+	</div>
+	<div class="nav_2">
+		<img src="images/PCimg/icon_sb.jpg">
+		<span>
+			好运妹一号<small></small>
+		</span>
+		<img class="dsj" src="images/dsj.png">
+		<ul class="nav_shezhi">
+			<li><a href="#"><img src="images/shezhi.png">设置</a></li>
+			<li><a href="#"><img src="images/zhuye.png">主页</a></li>
+			<li><a href="#"><img src="images/tuichu.png">退出</a></li>
+		</ul>
+	</div>
+	<div class="nav_clear"></div>
+</div>
+<!--end head -->
+
+<div class="main-container min__width" id="main-container">
+	<!--左侧菜单 Start-->
+	<div class="main-container-inner">
+		<!-- <a class="menu-toggler" id="menu-toggler" href="#">
+			<span class="menu-text"></span>
+		</a> -->
+	<div class="sidebar" id="sidebar">
+			<ul class="nav nav-list">
+				<li>
+					<a href="optproductManage.html" class="dropdown-toggle">
+						<i class="icon-dashboard"></i>
+						<span class="menu-text"> 优品设置 </span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--左侧菜单 End-->
+
+	<div class="main-content min_width">
+			<div class="breadcrumbs" id="breadcrumbs">
+				 <div class="nav_suoyin">
+					<span>
+						<i class=""></i>
+						<a href="javascript:void(0)" class="cleardecor">优品</a>
+					</span>
+						>
+					<span>
+						<i class=""></i>
+						<a href="optproductManage.html" class="cleardecor">优品管理</a>
+					</span>
+						>
+					<span>
+						<i class=""></i>
+						<a href="javascript:void(0)" class="cleardecor">优品新增</a>
+					</span>
+				</div>
+			 </div>
+			<div class="shangpin_content">
+				<!-- 右侧顶部内容 -->
+				<p class="pingou_title">优品新增</p>
+				<!-- 右侧顶部内容 end-->
+				<!-- 右侧主要内容 -->
+				<form method="post" id="ListForm" action="">
+					<div class="fm_content tyx ">
+						<div>名称：</div>
+						<div class="order_input activity_name">
+							<input type="text"/ class="width_input">
+						</div>
+					</div>
+					<div class="fm_content tyx margin20">
+						<div>封面：</div>
+						<div>
+							<div class="fm_img_rq">
+								<img src="images/img_upload.jpg" alt="" class="fm_img_mr">
+								<input type="file" class="fm_file"/>
+							</div>
+							建议图片尺寸：750 X 1334 PX
+						</div>
+					</div>
+					<div class="fm_content tyx ">
+						<div>内容：</div>
+						<div>
+							<div id="" class="youpins">
+								<div class="youpins_head">
+										类型：
+										<select name="" class="yp_select_type">
+											<option value="0">图片</option>	
+											<option value="1">视频</option>	
+										</select>
+										<img class="nr_close" src="images/icon_closed.jpg" alt="">
+								</div>
+								<div class="youpins_main">
+										<div class="nr_img fm_img_rq">
+											<img src="images/img_upload.jpg" alt="" class="fm_img_mr">
+											<input name="file_img" type="file" class="fm_file">
+										</div>
+										<div class="youpins_video none">
+											<select  class="youpins_video_select">
+												<option value="">商家选择</option>
+												<option value="">巴山土猪</option>
+											</select>
+											<select multiple="multiple" class="youpins_video_select_content ">
+						                        <option value="0">玫瑰花</option>
+						                        <option value="1">百合花</option>
+						                        <option value="2">仙人掌</option>
+						                        <option value="3">郁金香</option>
+						                        <option value="4">万寿菊</option>
+	                     					</select>
+										</div>
+								</div>
+								<textarea class="youpins_textarea" maxlength="100"  placeholder="内容介绍，100字以内！非必填。"></textarea>
+								<a class="a_add_youp">添加内容</a>
+							</div>
+						</div>
+					</div>
+					<div class="fm_content tyx">
+						<div>排序：</div>
+						<div><input type="text" class="width_input"></div>
+					</div>
+					<div class="fm_content tyx ">
+						<div>链接至：</div>
+						<div class="lianjie_zhi">
+							<select class="lianjie_select">
+								<option value="0">品牌商品列表</option>
+								<option value="1">商品</option>
+							</select>
+							<div class="lianjie_div">
+									<select id="editable-select" class="lianjie_select_rq1 font_select">
+									    <option>Alfa Romeo</option>
+									    <option>Audi</option>
+										<option>中国人民银行</option>
+									    <option>中国人民</option>
+									    <option>中国</option>
+									    <option>BMW</option>
+									    <option>Citroen</option>
+									    <option>Fiat</option>
+									    <option>Ford</option>
+									    <option>Jaguar</option>
+									    <option>Jeep</option>
+									    <option>Lancia</option>
+									    <option>Land Rover</option>
+									    <option>Mercedes</option>
+									    <option>Mini</option>
+									    <option>Nissan</option>
+									    <option>Opel</option>
+									    <option>Peugeot</option>
+									    <option>Porsche</option>
+									    <option>Renault</option>
+									</select>
+								<div class="lianjie_select_rq2 none">
+									<div class="lianjie_select_text">
+										<input type="text"><input type="button" class="lianjie_btn_cx" value="查询">
+									</div>
+									<div class="select_content_tishi none">
+										不好意思，您搜索的商品不存在！
+									</div>
+									<ul class="btn_cx_sp none">
+										<li>
+											<img src="images/img.png" alt="">
+											<p>红毛烧-52度极品红毛烧-52度极品红毛烧-52度极品</p>
+											<input type="button" class="" value="选择">
+										</li>
+										<li>
+											<img src="images/img.png" alt="">
+											<p>红毛烧-52度极品</p>
+											<input type="button" class="" value="选择">
+										</li>
+										<li>
+											<img src="images/img.png" alt="">
+											<p>红毛烧-52度极品</p>
+											<input type="button" class="" value="选择">
+										</li>
+										<li>
+											<img src="images/img.png" alt="">
+											<p>红毛烧-52度极品</p>
+											<input type="button" class="" value="选择">
+										</li>
+										<li>
+											<img src="images/img.png" alt="">
+											<p>红毛烧-52度极品</p>
+											<input type="button" class="" value="选择">
+										</li>
+										<li>
+											<img src="images/img.png" alt="">
+											<p>红毛烧-52度极品</p>
+											<input type="button" class="" value="选择">
+										</li>
+										<li>
+											<img src="images/img.png" alt="">
+											<p>红毛烧-52度极品</p>
+											<input type="button" class="" value="选择">
+										</li>
+										<li>
+											<img src="images/img.png" alt="">
+											<p>红毛烧-52度极品</p>
+											<input type="button" class="" value="选择">
+										</li>
+										<li>
+											<img src="images/img.png" alt="">
+											<p>红毛烧-52度极品</p>
+											<input type="button" class="" value="选择">
+										</li>
+										<li>
+											<img src="images/img.png" alt="">
+											<p>红毛烧-52度极品</p>
+											<input type="button" class="" value="选择">
+										</li>
+									</ul>
+									<div class="shangpin_bottom btn_cx_sp none">
+										<div class="bottom_right dingdan_bottom_suoyin">
+											<!-- 结构索引 -->
+												<ul class="pagination">
+														<li class="disabled">
+															<a href="#">
+																《
+															</a>
+														</li>
+														<li class="active">
+															<a href="#">1</a>
+														</li>
+
+														<li>
+															<a href="#">2</a>
+														</li>
+
+														<li>
+															<a href="#">3</a>
+														</li>
+
+														<li>
+															<a href="#">4</a>
+														</li>
+
+														<li>
+															<a href="#">5</a>
+														</li>
+
+														<li>
+															<a href="#">
+																》
+															</a>
+														</li>
+												</ul>
+										<!-- 结构索引 end-->
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+					<div class="submityx margintop">
+						<input type="submit" value="提交" />
+						<a href="javascript:history.go(-1)">返回</a>
+					</div>
+				</form>
+				<!-- 右侧主要内容 end -->
+				<!-- 右侧底部内容 -->
+			
+				<!-- 右侧底部内容结束 -->
+			</div>				
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>	
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.editable-select.min.js"></script>
+
+<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+
+<script type="text/javascript">
+	$(function(){
+				//设置select的可输入选项框
+				$('#editable-select').editableSelect({
+					effects:'slide'
+				});
+				function getID(obj){
+					var ypIds = [];
+					$(obj).each(function(ind,ele){
+						ypIds[ind] = $(ele).attr('id');
+					});
+					return ypIds;
+				}
+				$(window).click(function(){
+				 var sz =getID('.youpins');
+				});
+				$('.submityx input[type=submit]').click(function(){
+					window.location.href="optproductManage.html";
+					//去除submit的提交效果
+					return false;
+				});
+				//点击查询
+				$('.lianjie_btn_cx').click(function(){
+					$('.btn_cx_sp').css('display','block');
+				});
+				//给选中的商品切换样式
+				$('.lianjie_select_rq2>ul>li>input').click(function(){
+					var $this=$(this);
+					if($this.hasClass('input_active')){
+						$this.removeClass('input_active');
+						$this.val('选择');
+					 }else{
+					 	$('.lianjie_select_rq2>ul>li>input').removeClass('input_active');
+						$('.lianjie_select_rq2>ul>li>input').val('选择');
+					 	$this.attr('class','input_active');
+						$this.val('已选择');
+					 }
+				});
+				//当选中的商品为空的时候
+				if($('.lianjie_select_rq2>ul>li').length < 1){
+					$('.select_content_tishi').css('display','block');
+					}else{
+						$('.select_content_tishi').css('display','none');
+					}
+				//select选择类别不同的切换
+				$(document).on('change','.yp_select_type',function(){
+					//判断当前选中的option的val值来确定当前选中的是哪个
+					var _thisParent =$(this).closest('.youpins').find('.youpins_main');
+					var thisOption = $(this).find("option:selected").val();
+					var zhi = parseInt(thisOption);
+					switch(zhi){
+						case 0:
+						//选中了第一个
+						console.log('选择了图片');
+						_thisParent.children('.nr_img').removeClass('none');
+						_thisParent.children('.youpins_video').addClass('none');
+						break;
+						case 1:
+						//选中了第二个
+						console.log('选择了视频');
+						_thisParent.children('.nr_img').addClass('none');
+						_thisParent.children('.youpins_video').removeClass('none');
+						break;
+					}
+				});
+				$('.lianjie_select').change(function(){
+					//判断当前选中的option的val值来确定当前选中的是哪个
+					var _thisParent =$(this).closest('.lianjie_zhi').find('.lianjie_div');
+					var thisOption = $(this).find("option:selected").val();
+					var zhi = parseInt(thisOption);
+					switch(zhi){
+						case 0:
+						//选中了第一个
+						console.log('选择了品牌商品列表');
+						_thisParent.children('.lianjie_select_rq1').removeClass('none');
+						_thisParent.children('.lianjie_select_rq2').addClass('none');
+						break;
+						case 1:
+						//选中了第二个
+						console.log('选择了商品');
+						_thisParent.children('.lianjie_select_rq1').addClass('none');
+						_thisParent.children('.lianjie_select_rq2').removeClass('none');
+						break;
+					}
+				});
+				//点击图片删除内容的，问题思路：当删除的不是最后一个容器的时候，那就不显示该容器前兄弟元素的添加按钮
+				var rqSlen = 0;
+				$(document).on('click','.nr_close',function(){
+					rqSlen = $('.youpins').length;
+					var parentClose =$(this).closest('.youpins');
+					if($('.youpins').length < 2){
+			  			alert('最少要留一个内容编辑');
+				 	  }else{
+				 	  	if($('.youpins').length < 3){
+				 	  			parentClose.prev().find('.a_add_youp').css('display','block');
+				 	  	}
+				 	    var val = parentClose.data('way');
+				 	    var rqIndex =1+($(this).closest('.youpins').index());
+				 	    console.log(rqSlen+'和'+rqIndex);
+					 	    if(rqSlen == rqIndex){
+						 	  	 	parentClose.prev().find('.a_add_youp').css('display','block');
+					 	  	}
+				 	 	 $(this).closest('.youpins').remove();
+				 	  }
+				});
+				//点击添加内容，复制一个之前的内容并且清楚之前那个内容的添加按钮
+				var fmIds= 1;//容器的ID，从1开始，
+				var $html=$('.youpins').html();
+				$('.youpins').attr('id','youpins'+0);
+				$('youpins .fm_file').attr('id','fightImage'+0);
+				$(document).on('click','.a_add_youp',function(){
+						var $div=$('<div id="youpins'+fmIds+'" class="youpins"></div>');
+						$div.html($html);
+						$(this).closest('.youpins').after($div);
+						$(this).closest('.youpins').next().find('.fm_file').attr('id','fightImage'+fmIds);
+						$(this).css('display','none');
+						fmIds++;
+						rqSlen = $('.youpins').length;
+				});	
+				//添加图片
+                $(document).on('change','.fm_file',function(){
+                    var $pj_file=$(this).parent().children('.fm_file');
+                    var $pj_img=$(this).parent().children('.fm_img_mr');
+                    var $pj_rq=$(this).parent();
+                    var imgrongqi=$pj_rq[0];
+                    var docObj=$pj_file[0];
+                    var imgObjPreview=$pj_img[0];
+                    if(docObj.files &&docObj.files[0])
+                    {
+                        imgObjPreview.style.display = 'block';
+                        imgObjPreview.style.width = '210px';
+                        imgObjPreview.style.height = '310px';
+                        imgObjPreview.style.margin ='0';
+                        imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+                    }
+                    else
+                    {
+                        docObj.select();
+                        var imgSrc = document.selection.createRange().text;
+                        var localImagId = document.getElementById(imgrongqi);
+                        localImagId.style.width = "210px";
+                        localImagId.style.height = "310px";
+                        localImagId.style.margin ='0';
+                        try{
+                        localImagId.style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+                        localImagId.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+                        }
+                        catch(e)
+                        {
+                        alert("您上传的图片格式不正确，请重新选择!");
+                        return false;
+                        }
+                    imgObjPreview.style.display = 'none';
+                    document.selection.empty();
+                    }
+                });
+
+			})
+</script>
+
+	</body>
+
+</html>

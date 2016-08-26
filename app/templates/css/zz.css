@@ -1,0 +1,51 @@
+body,h1{font-family: "microsoft yahei";}
+.zz-add-img{width: 30px; height: 30px; margin-right: 10px;}
+.zzHiddenImg{position: relative; padding-top: 10px;}
+.hoverImg{position: absolute; left: 0; top: 30px;z-index: 10; }
+.hoverImg img{width:200px; border: 1px solid #E5E5E5;}
+:outline{border: none;}
+*[hidden]{display:none;}
+button:active{outline: none;}
+
+/*上传按钮*/											
+.div1{position:relative;float:left;width:55px;height:26px;text-align: center;}
+.upload_img{border-radius:4px;background:#d15b47}
+.update_img{margin-left:10px;border-radius:4px;background:#a0a0a0}
+.delate_img{float:left;padding-top:5px}
+.div2{color:#fff;text-align:center;font-size:9pt;line-height:26px}
+.inputstyle{position:absolute;top:0;left:0;width:55px;height:26px;outline:medium 0;font-size:9pt;opacity:0;cursor:pointer;filter:alpha(opacity=0);-moz-opacity:0}
+.form-horizontal .checkbox{padding:0}
+.form-horizontal .checkbox input[type=checkbox]{vertical-align:middle}
+.zz-width{width:40px;text-align:center}
+.modal-dialog>.modal-content{border-radius:8px}
+.modal-header .close{font-size:1pc}
+.zz_radius{border-radius:8px}
+.modal-dialog .modal-footer{border-radius:0 0 8px 8px}
+.btn{border-radius:4px;text-shadow:none}
+.breadcrumb{line-height:40px}
+
+
+
+/*activity check*/
+.alert{margin-bottom:10px;line-height:40px}
+.nav-list li.active>a:after{border:none}
+.btn.btn-info{text-shadow:none}
+.font12{font-size:12px}
+.color666{color:#666}
+.colorAAA{background:#aaa;color:#fff}
+.price_width{width:8em;text-align:left;font-size:12px}
+.search_width{width:300px}
+.page-header h1{font-size:20px}
+.nav-tabs>li.active a{font-weight:700}
+.form-group.activityNew{line-height:30px}
+.form-group.activityNew .col-sm-9{padding-top:5px}
+.sort_width{width:60px}
+.table tbody>tr>td.table_padding{padding-top:15px}
+.nopic{padding: 5px 5px 0 0; float: left;}
+
+
+
+
+
+
+

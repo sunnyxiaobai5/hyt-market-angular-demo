@@ -1,0 +1,10 @@
+logs/*
+!.gitkeep
+node_modules/
+bower_components/
+tmp
+.DS_Store
+.idea
+/frontend-demo.iml
+/npm-debug.log
+/app/bower_components/

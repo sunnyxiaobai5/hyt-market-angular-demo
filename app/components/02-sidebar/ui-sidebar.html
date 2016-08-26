@@ -1,0 +1,13 @@
+<div class="main-container-inner">
+
+    <div class="sidebar" id="sidebar">
+        <ul class="nav nav-list">
+            <li ng-repeat="menu in menus track by $index">
+                <a ui-sref-active="active" ui-sref="{{menu.state}}" class="dropdown-toggle">
+                    <i class="{{menu.icon}}"></i>
+                    <span class="menu-text"> {{menu.name}} </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

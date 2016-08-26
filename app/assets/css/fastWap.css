@@ -1,0 +1,352 @@
+* {
+	margin: 0;
+	padding: 0
+}
+::-webkit-scrollbar {
+	width: 0
+}
+
+
+li,
+ul {
+	list-style: none
+}
+html,body {
+	margin: 0;
+	padding: 0;
+	background: #F0F0F0;
+	font-size: 9pt;
+	font-family: "微软雅黑"
+}
+.header {
+	position: fixed;
+	padding: 0;
+	width: 100%;
+	height: 40pt;
+	line-height: 40pt
+}
+.tittle {
+	width: 100%;
+	border-bottom: 1px solid #d7d7d7;
+	background: #f0f0f0
+}
+.back,
+.tittle {
+	position: relative
+}
+.back {
+	float: left;
+	width: 20%;
+	height: 40pt;
+	line-height: 40pt
+}
+.back a {
+	padding-left: 5px;
+	color: #272727;
+	text-align: left;
+	text-decoration: none;
+	font-size: 18px
+}
+.tittle h2 {
+	float: left;
+	width: 60%;
+	height: 40pt;
+	color: #000;
+	text-align: center;
+	font-weight: 400;
+	font-size: 1pc;
+	line-height: 40pt
+}
+.notice {
+	width: 100%;
+	height: 40px
+}
+.date {
+	float: left;
+	width: 100%;
+	height: 100%
+}
+.fast_buy_time {
+	line-height: 30px
+}
+.buyer_time {
+	color: #e20006
+}
+.time_content {
+	color: #272727
+}
+.time_content span {
+	margin: 0 2px;
+	padding: 1px 2px;
+	border-radius: 4px;
+	background: #272727;
+	color: #fff
+}
+.date p {
+	width: 100%;
+	color: #1a1a1a;
+	line-height: 40px;
+	text-align: center;
+}
+.announce {
+	float: right;
+	height: 100%
+}
+.btn {
+	margin: 5px 5px 5px 0;
+	width: 85px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: #272727;
+	color: #fff
+}
+.btn img {
+	float: left;
+	margin: 7px 0 0 7px;
+	width: 1pc;
+	height: 1pc
+}
+.btn a {
+	color: #fff;
+	text-decoration: none
+}
+.btn p {
+	margin: 0 0 0 25px;
+	height: 20px;
+	line-height: 30px
+}
+.time {
+	margin-bottom: 8px;
+	width: 100%;
+	height: 30px;
+	background-color: #dedede
+}
+.count-down {
+	float: left;
+	height: 30px
+}
+.content {
+	background-color: #f0f0f0
+}
+.banner {
+	margin: 0;
+	padding: 0
+}
+.banner a,
+.banner img {
+	margin: 0;
+	padding: 0;
+	width: 100%
+}
+.banner img {
+	display: block
+}
+.details {
+	height: 45px;
+	border-bottom: 1px solid #dbdbdb;
+	background-color: #fff
+}
+.details a {
+	text-decoration: none
+}
+.introduce {
+	float: left;
+	padding: 0 0 0 5px;
+	width: 75%;
+	height: 100%
+}
+.introduce p {
+	margin: 0;
+	color: #1a1a1a;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 9pt;
+	line-height: 22px
+}
+.introduce a,
+.introduce p {
+	overflow: hidden;
+	width: 100%
+}
+.introduce a {
+	color: #000
+}
+.price .bigprice {
+	float: left;
+	display: block;
+	color: #f21c30;
+	font-weight: 700;
+	font-size: 14px
+}
+.price .bigprice i {
+	font-weight: 400;
+	font-style: normal;
+	font-size: 9pt
+}
+.price span {
+	float: right;
+	color: #6f6f6f;
+	font-size: 10px
+}
+.sellout {
+	float: right;
+	width: 20%;
+	height: 100%
+}
+.sellout p {
+	width: 100%;
+	background: #a2a2a2;
+	color: #fff;
+	text-align: center;
+	line-height: 45px
+}
+.goods-fastbuy {
+	margin-bottom: 0
+}
+.timing-eight,
+.timing-twelve {
+	position: relative;
+	float: left;
+	display: inline-block;
+	width: 14%;
+	height: 30px
+}
+.timing-twelve {
+	background: #e20006
+}
+.timing-eight {
+	background: #333
+}
+.timing-eight:after,
+.timing-twelve:after {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	content: ""
+}
+.timing-twelve:after {
+	border-left: 7px solid #e20006
+}
+.timing-eight:after {
+	border-left: 7px solid #333
+}
+.timing-eight p,
+.timing-twelve p {
+	padding: 0 0 0 5px;
+	width: 100%;
+	color: #fff;
+	line-height: 30px
+}
+.fastbuy {
+	float: right;
+	width: 20%;
+	height: 100%
+}
+.fastbuy p {
+	width: 100%;
+	background: #e20006;
+	color: #fff;
+	text-align: center;
+	line-height: 45px
+}
+.timing-thirteen {
+	float: left;
+	width: 25%;
+	height: 100%;
+	background: url(../images/wap/grey.png) no-repeat
+}
+.goods-list li {
+	position: relative;
+	margin: 0 0 15px
+}
+.count-down {
+	float: right;
+	padding-right: 10px;
+	height: 30px
+}
+.price {
+	position: relative;
+	overflow: hidden;
+	height: 30px;
+	line-height: 20px
+}
+.count-down p {
+	margin: 7px 0;
+	color: #e20006
+}
+.timing-thirteen p {
+	float: left;
+	margin: 0;
+	padding: 7px 0 7px 10px;
+	width: 40px;
+	color: #fff;
+	text-align: center;
+	font-weight: 700
+}
+.willbuy {
+	float: right;
+	width: 20%;
+	height: 100%
+}
+.willbuy p {
+	width: 100%;
+	background: #2d940f;
+	color: #fff;
+	text-align: center;
+	line-height: 45px
+}
+.goods-items {
+	position: relative;
+	display: block;
+	margin: 0 10px;
+	margin-top: 8px;
+	height: auto;
+	background: #fff
+}
+.fast-buy-end {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: block;
+	width: 100%;
+	background: rgba(0, 0, 0, .5);
+	text-align: center
+}
+.fast-buy-end img {
+	margin-top: 40px;
+	width: 40%
+}
+.indexdiscount {
+	display: inline;
+	margin-left: 5px;
+	padding-right: 3px;
+	width: 42px;
+	height: 18px;
+	background: url(../images/wap/tag.png) no-repeat;
+	background-size: 100% 100%;
+	color: #fff;
+	text-align: right;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 10px;
+	line-height: 18px
+}
+
+@media screen and (min-width: 720px) and (max-width:960px) {
+ .details{height: 70px;}
+ .sellout p,.fastbuy p,.willbuy p{line-height: 70px; font-size: 14px;}
+ .introduce p{line-height: 40px;}
+ .timing-eight, .timing-twelve{width: 8%;}
+}
+
+@media screen and (min-width: 961px) {
+ .details{height: 80px;}
+ .sellout p,.fastbuy p,.willbuy p{line-height: 80px; font-size: 16px;}
+ .introduce p{line-height: 46px;}
+ .timing-eight, .timing-twelve{width: 5%;}
+}

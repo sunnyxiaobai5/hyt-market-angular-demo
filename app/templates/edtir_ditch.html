@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dth HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dth">
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>编辑渠道</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/ace.min.css" />
+	<link rel="stylesheet" href="css/pg_shangpin.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- <link rel="stylesheet" href="css/ace-rtl.min.css" />-->
+	<link rel="stylesheet" href="css/zz.css" />
+	<link rel="stylesheet" href="css/youhuiquan.css" />
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+	<![endif]-->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- head -->
+	<div class="nav_daohang">
+		<div class="nav_1">
+			<a href="#">营销系统</a>
+		</div>
+		<div class="nav_content">
+			<a class="a_active" href="pg_setwenan.html">拼购</a>
+			<a href="youpin_bgo.html">优品</a>
+			<a href="yunshuo_bgo.html">云说</a>
+			<a href="#">抢购</a>
+			<a href="youhuiquan_bgo.html">优惠券</a>
+		</div>
+		<div class="nav_2">
+			<img src="images/PCimg/icon_sb.jpg">
+			<span>
+				好运妹一号
+				<small></small>
+			</span>
+			<img class="dsj" src="images/dsj.png">
+			<ul class="nav_shezhi">
+				<li>
+					<a href="#">
+						<img src="images/shezhi.png">设置</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/zhuye.png">主页</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/tuichu.png">退出</a>
+				</li>
+			</ul>
+		</div>
+		<div class="nav_clear"></div>
+	</div>
+	<!--end head -->
+	<div class="main-container min__width" id="main-container">
+		<!--左侧菜单 Start-->
+		<div class="main-container-inner">
+			<!-- <a class="menu-toggler" id="menu-toggler" href="#">
+			<span class="menu-text"></span>
+		</a>
+		-->
+		<div class="sidebar" id="sidebar"><!-- zca_active为选中样式 -->
+			<ul class="nav nav-list">
+				<li>
+					<a href="youhuiquan_bgo.html" class="dropdown-toggle">
+						<i class="icon-cogs"></i>
+						<span class="menu-text"> 券包管理 </span>
+					</a>
+				</li>
+				<li>
+					<a href="register_give.html" class="dropdown-toggle"> <i class="icon-tag"></i>
+						<span class="menu-text">注册送券</span>
+					</a>
+				</li>
+				<li>
+					<a href="buy_give.html" class="dropdown-toggle"> <i class="icon-tags"></i>
+						<span class="menu-text">购物送券</span>
+					</a>
+				</li>
+				<li>
+					<a href="youhuiquan_hezuo.html" class="dropdown-toggle zca_active"> <i class="icon-tasks"></i>
+						<span class="menu-text">渠道合作</span>
+					</a>
+				</li>
+				<li>
+					<a href="expository.html" class="dropdown-toggle"> <i class="icon-bullhorn"></i>
+						<span class="menu-text">优惠券使用说明</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--左侧菜单 End-->
+
+	<div class="main-content min_width">
+		<div class="breadcrumbs" id="breadcrumbs">
+			<!-- <script type="text/javascript">
+			try {
+						ace.settings.check('breadcrumbs', 'fixed')
+					} catch (e) {}
+		</script>
+		-->
+		<div class="nav_suoyin">
+			<span> <i class=""></i>
+				<a href="javascript:void(0)" class="cleardecor">优惠券</a>
+			</span>
+			>
+			<span>
+				<i class=""></i>
+				<a href="youhuiquan_hezuo.html" class="cleardecor">渠道合作</a>
+			</span>
+			>
+			<span>
+				<i class=""></i>
+				<a href="edtir_ditch.html" class="cleardecor">编辑渠道</a>
+			</span>
+		</div>
+	</div>
+	<div class="shangpin_content">
+		<!-- 右侧主要内容 -->
+		<table class=" table_ditch">
+			<tbody>
+				<tr>
+					<td>渠道名称：</td>
+					<td><input  type="text" name="ditch_name" placeholder="20个字以内" class="ditch_name" value="平安银行"></td>
+				</tr>
+				<tr>
+					<td>合作时间：</td>
+					<td class="row"><input placeholder="开始时间" class="time_put nianyueri" type="text" name="">-<input placeholder="结束时间" class="time_put nianyueri" type="text" name=""></td>
+				</tr>
+				<tr>
+					<td>登录账号：</td>
+					<td>haoyuntao</td>
+				</tr>
+				<tr>
+					<td>登录密码：</td>
+					<td><input class="normal_put" placeholder="不输入则保持原密码" type="password" name=""></td>
+				</tr>
+				<tr>
+					<td>选择券包：</td>
+					<td>
+						<select class="select_put">
+							<option value="">请选择券包</option>
+							<option value="券包1">券包1</option>
+							<option value="券包2">券包2</option>
+							<option value="券包3">券包3</option>
+							<option value="券包4">券包4</option>
+						</select>
+						<!-- <a href="#" class="hz_btn hz_addbtn">加入</a> -->
+						<input type="button" name="" class="hz_btn hz_addbtn" id="ticket_add" value="加入">
+					</td>
+				</tr>
+				<tr>
+					<td>关联券包：</td>
+					<td>
+						<table class="table table-bordered ticket_table">
+							<tr>
+								<td>券包选择</td>
+								<td>操作</td>								
+							</tr>
+							<tr>
+								<td>券包2</td>
+								<td class="tdval" data-val="券包2"><a href="#">删除</a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>备注：</td>
+					<td>
+						<textarea class="hz_beizhu" placeholder="可最多输入200字"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="button" class="hz_btn" name="" value="提交">
+						<input type="button" class="hz_btn" value="返回">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- 右侧底部内容结束 -->
+	</div>
+</div>
+</div>
+<!-- 删除提示模态窗口 -->
+<div class="modal fade" id="scqrmodal" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog">
+	<div class="modal-content ljff_max_width">
+		<div class="modal-body">
+			<div class="panel-body text-center">确定要删除此记录吗？</div>
+		</div>
+		<div class="modal-footer modal_dibu">
+			<button type="button" class="btn btn-primary">确定</button>
+			<button type="button" class="btn btn-default sc_quxiao">取消</button>
+		</div>
+	</div>
+	<!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!-- 删除提示模态窗口 end-->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/laydate/laydate.js"></script>
+<!--[if lte IE 8]>
+<script src="assets/js/excanvas.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+	$(function(){
+		//弹出框
+		$('.sc_btn').click(function(){
+            $('#scqrmodal').modal();
+        });
+		$('.sc_quxiao').click(function(){
+			$('#scqrmodal').modal('hide');
+		});
+		$('.nianyueri').click(function(){
+			laydate({
+				istime:true,
+				format:'YYYY-MM-DD hh:mm:ss',
+			});
+		});
+		//添加券包
+		$("#ticket_add").click(function(){
+			var val = $(".select_put").val();
+			if(val==='') {
+				alert("请选择一个券包");
+				return false
+			};
+			var can = true;
+			$(".tdval").each(function(){
+				if($(this).data("val")===val){
+					alert(val+"已被关联过");
+					can = false;
+					return can;
+				}
+			})
+			if(can===true){
+				var html = 	'<tr><td>'+val+'</td><td class="tdval" data-val="'+val+'"><a href="#">删除</a></td></tr>';
+				$(".ticket_table").append(html);
+			}
+		})
+		//删除关联券包
+		$(document).on('click','.tdval a',function(){
+			$(this).closest('tr').remove();
+		})
+	});
+</script>
+
+</body>
+
+</html>

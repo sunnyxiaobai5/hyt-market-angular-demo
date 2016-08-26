@@ -1,0 +1,74 @@
+body{
+	background:url('../images/fj1.jpg') no-repeat;
+	background-size:cover;
+}
+p,a{
+	font-family:'微软雅黑';
+	font-size:2em;
+}
+.content{
+	margin-top: 50px;
+}
+.icon{
+	width:290px;
+	overflow: hidden;
+	margin:0 auto;
+	margin-top:150px;
+}
+.icon > img{
+	max-height:100%;
+	max-width:100%;
+}
+.p_wenben{
+	padding:15px 0;
+	width:100%;
+	text-align:center;
+	color:#ffffff;
+}
+.div_btn{
+	margin:0 auto;
+	width:80%;
+	color:#ffffff;
+	text-align:center;
+	margin-top:40px;
+}
+.div_btn > a{
+	display:inline-block;
+	/*解决方法IE7-inline-block的无效bug*/
+    *zoom:1;
+    *display:inline;
+	text-decoration:none;
+	color:#ffffff;
+	width:145px;
+	height:50px;
+	border:1px solid #ffffff;
+	border-radius:5px;
+	text-align:center;
+	line-height:1.8em;
+	margin:1.2% 3.5% 0 0;
+	transition: 1s background;
+}
+/*.div_btn > a:nth-child(2){
+	margin-right:0;
+}
+.div_btn > a:nth-child(3){
+	margin-right:0;
+}
+.div_btn > a:nth-child(4){
+	margin-right:0;
+}*/
+.div_btn > a:hover{
+	color:#536370;
+	background:#ffffff;
+}
+/*兼容低版本ie的写法!有3个按钮，就写3个a，4个就写4个a,依次往后推*/
+/**+.div_btn > a+a{
+	margin-right:0;
+}
+*+.div_btn > a+a+a{
+	margin-right:0;
+}
+*+.div_btn > a+a+a+a{
+	margin-right:0;
+}
+*/

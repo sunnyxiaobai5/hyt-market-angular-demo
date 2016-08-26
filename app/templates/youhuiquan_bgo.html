@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dth HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dth">
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>优惠券管理</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/ace.min.css" />
+<link rel="stylesheet" href="css/pg_shangpin.css" />
+<link rel="stylesheet" href="css/style.css" />
+<!-- <link rel="stylesheet" href="css/ace-rtl.min.css" /> -->
+<link rel="stylesheet" href="css/zz.css" />
+<link rel="stylesheet" href="css/youhuiquan.css" />
+<link rel="stylesheet" href="css/quanbao.css" />
+<!--[if lte IE 8]>
+  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- head -->
+<div class="nav_daohang">
+	<div class="nav_1"><a href="#">营销系统</a></div>
+	<div class="nav_content">
+		<a class="a_active" href="pg_setwenan.html">拼购</a>
+		<a href="youpin_bgo.html">优品</a>
+		<a href="yunshuo_bgo.html">云说</a>
+		<a href="#">抢购</a>
+		<a href="youhuiquan_bgo.html">优惠券</a>
+	</div>
+	<div class="nav_2">
+		<img src="images/PCimg/icon_sb.jpg">
+		<span>
+			好运妹一号<small></small>
+		</span>
+		<img class="dsj" src="images/dsj.png">
+		<ul class="nav_shezhi">
+			<li><a href="#"><img src="images/shezhi.png">设置</a></li>
+			<li><a href="#"><img src="images/zhuye.png">主页</a></li>
+			<li><a href="#"><img src="images/tuichu.png">退出</a></li>
+		</ul>
+	</div>
+	<div class="nav_clear"></div>
+</div>
+<!--end head -->
+<div class="main-container min__width" id="main-container">
+	<!--左侧菜单 Start-->
+	<div class="main-container-inner">
+		<!-- <a class="menu-toggler" id="menu-toggler" href="#">
+			<span class="menu-text"></span>
+		</a> -->
+		<div class="sidebar" id="sidebar"><!-- zca_active为选中样式 -->
+			<ul class="nav nav-list">
+				<li>
+					<a href="youhuiquan_bgo.html" class="dropdown-toggle zca_active">
+						<i class="icon-cogs"></i>
+						<span class="menu-text"> 券包管理 </span>
+					</a>
+				</li>
+				<li>
+					<a href="register_give.html" class="dropdown-toggle "> <i class="icon-tag"></i>
+						<span class="menu-text">注册送券</span>
+					</a>
+				</li>
+				<li>
+					<a href="buy_give.html" class="dropdown-toggle "> <i class="icon-tags"></i>
+						<span class="menu-text">购物送券</span>
+					</a>
+				</li>
+				<li>
+					<a href="youhuiquan_hezuo.html" class="dropdown-toggle"> <i class="icon-tasks"></i>
+						<span class="menu-text">渠道合作</span>
+					</a>
+				</li>
+				<li>
+					<a href="expository.html" class="dropdown-toggle"> <i class="icon-bullhorn"></i>
+						<span class="menu-text">优惠券使用说明</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--左侧菜单 End-->
+
+	<div class="main-content min_width">
+			<div class="breadcrumbs" id="breadcrumbs">
+				<!-- <script type="text/javascript">
+					try {
+						ace.settings.check('breadcrumbs', 'fixed')
+					} catch (e) {}
+				</script>
+				 -->
+				 <div class="nav_suoyin">
+					<span>
+						<i class=""></i>
+						<a href="javascript:void(0)" class="cleardecor">优惠券</a>
+					</span>
+						>
+					<span>
+						<i class=""></i>
+						<a href="youhuiquan_bgo.html" class="cleardecor">券包管理</a>
+					</span>
+				</div>
+			 </div>
+			<div class="shangpin_content">
+				<!-- 右侧顶部内容 -->
+		<a href="youhuiquan_bgo.html" class="quanbao_btn quanbao_btn_active">券包</a>
+				<a href="quanbao_ffjl.html" class="quanbao_btn ">发放记录</a>
+				<a href="add_quanbao.html" class="quanbao_btn ">新建券包</a>
+				<p class="pingou_title">券包查询</p>
+				<P class="shangpin_select">
+					<span><input type="text" class="width_xx" placeholder="输入券包名称"></span>
+					<input type="button" value="查询" class="td_btn">
+				</P>
+					<!-- 右侧顶部内容 end-->
+				<!-- 右侧主要内容 -->
+				<p class="pingou_title">券包列表</p>
+				<div class="shangpin_tishi">
+					查找的商品没找到，请重新查找！
+				</div>
+				<table class="table table-bordered">
+					<thead>
+						<th>券包名称</th>
+						<th>含券数量</th>
+						<th>剩余</th>
+						<th>已发放</th>
+						<th>操作</th>
+					</thead>
+					<tbody>
+							<tr>
+								<td>圣诞100元礼包圣诞100元礼包圣诞100</td>
+								<td class="td_xwidthlen">5</td>
+								<td class="td_xwidthlen">100</td>
+								<td class="td_xwidthlen">100</td>
+								<td class="td_caozuo">
+									<a href="quanbao_ffjl.html" class="cleardecor">发放记录&nbsp;&nbsp;|</a><a href="add_quanbao.html" class="cleardecor">编辑&nbsp;&nbsp;|</a><a href="javascript:void(0)" class="sc_btn cleardecor">删除</a>
+								</td>
+							</tr>
+							<tr>
+								<td>圣诞100元礼包</td>
+								<td class="td_xwidthlen">5</td>
+								<td class="td_xwidthlen">无限</td>
+								<td class="td_xwidthlen">100</td>
+								<td class="td_caozuo">
+									<a href="quanbao_ffjl.html" class="cleardecor">发放记录&nbsp;&nbsp;|</a><a href="add_quanbao.html" class="cleardecor">编辑&nbsp;&nbsp;|</a><a href="javascript:void(0)" class="sc_btn cleardecor">删除</a>
+								</td>
+							</tr>
+					</tbody>
+				</table>
+				<!-- 右侧主要内容 end -->
+				<!-- 右侧底部内容 -->
+				<div class="shangpin_bottom">
+					<span class="yeshu_len">每页显示20条</span>
+					<div class="bottom_right dingdan_bottom_suoyin">
+						<!-- 结构索引 -->
+							<ul class="pagination">
+									<li class="disabled">
+										<a href="#">
+											《
+										</a>
+									</li>
+									<li class="active">
+										<a href="#">1</a>
+									</li>
+
+									<li>
+										<a href="#">2</a>
+									</li>
+
+									<li>
+										<a href="#">3</a>
+									</li>
+
+									<li>
+										<a href="#">4</a>
+									</li>
+
+									<li>
+										<a href="#">5</a>
+									</li>
+
+									<li>
+										<a href="#">
+											》
+										</a>
+									</li>
+							</ul>
+					<!-- 结构索引 end-->
+					</div>
+				</div>
+				<!-- 右侧底部内容结束 -->
+			</div>				
+	</div>
+</div>
+<!-- 删除提示模态窗口 -->
+    <div class="modal fade" id="scqrmodal" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content ljff_max_width">
+                <div class="modal-body">
+                    <div class="panel-body text-center">
+                        确定要删除此记录吗？
+                    </div>
+                </div>
+                <div class="modal-footer modal_dibu">
+                    <button type="button" class="btn btn-primary">确定</button>
+                    <button type="button" class="btn btn-default sc_quxiao">取消</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!-- 删除提示模态窗口 end-->
+		
+		
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>	
+<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+
+<script type="text/javascript">
+	$(function(){
+			$('.sc_btn').click(function(){
+                $('#scqrmodal').modal();
+            });
+			$('.sc_quxiao').click(function(){
+				$('#scqrmodal').modal('hide');
+			});
+	});
+</script>
+
+	</body>
+
+</html>

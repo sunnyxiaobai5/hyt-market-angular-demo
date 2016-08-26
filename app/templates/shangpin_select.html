@@ -1,0 +1,289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dth HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dth">
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>商品管理</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/ace.min.css" />
+<link rel="stylesheet" href="css/shangpin_select.css" />
+<link rel="stylesheet" href="css/style.css" />
+<!-- <link rel="stylesheet" href="css/ace-rtl.min.css" /> -->
+<link rel="stylesheet" href="css/zz.css" />
+<!--[if lte IE 8]>
+  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+<style>
+	.col-sm-1,.col-sm-10,.col-sm-3.col-sm-9{padding-right: 0;}
+	.col-sm-3,.col-sm-9{padding-left: 0;}
+	
+</style>
+
+</head>
+
+<body>
+<!-- head -->
+<div class="nav_daohang">
+	<div class="nav_1"><a href="#">营销系统</a></div>
+	<div class="nav_content">
+		<a class="a_active" href="pg_setwenan.html">拼购</a>
+		<a href="youpin_bgo.html">优品</a>
+		<a href="yunshuo_bgo.html">云说</a>
+		<a href="#">抢购</a>
+		<a href="youhuiquan_bgo.html">优惠券</a>
+	</div>
+	<div class="nav_2">
+		<img src="images/PCimg/icon_sb.jpg">
+		<span>
+			好运妹一号<small></small>
+		</span>
+		<img class="dsj" src="images/dsj.png">
+		<ul class="nav_shezhi">
+			<li><a href="#"><img src="images/shezhi.png">设置</a></li>
+			<li><a href="#"><img src="images/zhuye.png">主页</a></li>
+			<li><a href="#"><img src="images/tuichu.png">退出</a></li>
+		</ul>
+	</div>
+	<div class="nav_clear"></div>
+</div>
+<!--end head -->
+
+<div class="main-container min__width" id="main-container">
+	<!--左侧菜单 Start-->
+	<div class="main-container-inner">
+		<!-- <a class="menu-toggler" id="menu-toggler" href="#">
+			<span class="menu-text"></span>
+		</a> -->
+
+		<div class="sidebar" id="sidebar">
+			<ul class="nav nav-list">
+				<li>
+					<a href="pg_setwenan.html" class="dropdown-toggle">
+						<i class="icon-dashboard"></i>
+						<span class="menu-text"> 文案设置 </span>
+					</a>
+				</li>
+				<li>
+					<a href="pg_shangpin.html">
+						<i class="icon-text-width"></i>
+						<span class="menu-text"> 商品管理 </span>
+					</a>
+				</li>
+
+				<li>
+					<a href="pg_dingdan.html" class="dropdown-toggle">
+						<i class="icon-desktop"></i>
+						<span class="menu-text"> 拼购订单 </span>
+					</a>
+				</li>
+				<li>
+					<a href="pg_tuikuantongji.html" class="dropdown-toggle">
+						<i class="icon-desktop"></i>
+						<span class="menu-text"> 退款统计 </span>
+					</a>
+				</li>
+				<li class="">
+					<a href="#">
+						<i class="icon-dashboard"></i>
+						<span class="menu-text"> 数据统计 </span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--左侧菜单 End-->
+
+	<div class="main-content min_width">
+			<div class="breadcrumbs" id="breadcrumbs">
+				<!-- <script type="text/javascript">
+					try {
+						ace.settings.check('breadcrumbs', 'fixed')
+					} catch (e) {}
+				</script>
+				 -->
+				<div class="nav_suoyin">
+					<span>
+						<i class=""></i>
+						<a href="#" class="cleardecor">拼购</a>
+					</span>
+						>
+					<span>
+						<a href="pg_shangpin.html" class="cleardecor">商品管理</a>
+					</span>
+						>
+					<span><a href="javascript:void(0)" class="cleardecor">选择商品</a></span>
+				</div>
+				<!-- .breadcrumb -->
+			 </div>
+			<div class="shangpin_content">
+				<p class="pingou_title">第一步：选择拼购商品</p>
+				<!-- 输入查询 -->
+				<P class="select_pinggou">		
+					<span>选择分类：
+								<select>
+									<option>全部分类</option>
+									<option>水酒</option>
+									<option>零食</option>
+								</select></span>
+					<span>商品关键字：<input type="text" placeholder="请输入内容...."></span>
+					<input type="button" value="查询" class="td_btn">
+				</P>
+				<!-- 输入查询 end -->
+				<!-- 查询结果 -->
+				<p class="select_jiegoutt">查询结果</p>
+				<div class="select_content">
+					<div class="select_content_tishi">
+						不好意思，您搜索的商品不存在！
+					</div>
+					<ul>
+						<li>
+							<img src="images/img.png" alt="">
+							<p>红毛烧-52度极品红毛烧-52度极品红毛烧-52度极品</p>
+							<input type="button" class="input_active" value="已选择">
+						</li>
+						<li>
+							<img src="images/img.png" alt="">
+							<p>红毛烧-52度极品</p>
+							<input type="button" class="" value="选择">
+						</li>
+						<li>
+							<img src="images/img.png" alt="">
+							<p>红毛烧-52度极品</p>
+							<input type="button" class="" value="选择">
+						</li>
+						<li>
+							<img src="images/img.png" alt="">
+							<p>红毛烧-52度极品</p>
+							<input type="button" class="" value="选择">
+						</li>
+						<li>
+							<img src="images/img.png" alt="">
+							<p>红毛烧-52度极品</p>
+							<input type="button" class="" value="选择">
+						</li>
+						<li>
+							<img src="images/img.png" alt="">
+							<p>红毛烧-52度极品</p>
+							<input type="button" class="" value="选择">
+						</li>
+						<li>
+							<img src="images/img.png" alt="">
+							<p>红毛烧-52度极品</p>
+							<input type="button" class="" value="选择">
+						</li>
+						<li>
+							<img src="images/img.png" alt="">
+							<p>红毛烧-52度极品</p>
+							<input type="button" class="" value="选择">
+						</li>
+						<li>
+							<img src="images/img.png" alt="">
+							<p>红毛烧-52度极品</p>
+							<input type="button" class="" value="选择">
+						</li>
+						<li>
+							<img src="images/img.png" alt="">
+							<p>红毛烧-52度极品</p>
+							<input type="button" class="" value="选择">
+						</li>
+					</ul>
+					<!-- 查询结果 end-->
+					<!-- 结构索引 -->
+						<div class="select_index">
+							<ul class="pagination">
+									<li class="disabled">
+										<a href="#">
+											《
+										</a>
+									</li>
+									<li class="active">
+										<a href="#">1</a>
+									</li>
+
+									<li>
+										<a href="#">2</a>
+									</li>
+
+									<li>
+										<a href="#">3</a>
+									</li>
+
+									<li>
+										<a href="#">4</a>
+									</li>
+
+									<li>
+										<a href="#">5</a>
+									</li>
+
+									<li>
+										<a href="#">
+											》
+										</a>
+									</li>
+							</ul>
+						</div>
+					<!-- 结构索引 end-->
+					<a href="shangpin_add.html" class="td_btn dblock cleardecor">下一步</a>
+				</div>
+			</div>				
+	</div>
+</div>
+
+		
+		
+		
+<script src="js/jquery.min.js"></script>	
+<script src="js/bootstrap.min.js"></script>
+
+<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+
+<script type="text/javascript">
+$(function(){
+	//弹出个人菜单
+	$('.nav_2').bind('click',function(e){
+		$('.nav_shezhi').toggle();
+		e.stopPropagation();//阻止点击事件冒泡到document
+	});
+	$(document).bind('click',function(){
+		$('.nav_shezhi').hide();
+	});
+	
+	//选择商品
+	$('.select_content>ul>li>input').click(function(){
+		var $this=$(this);
+
+		if($this.hasClass('input_active')){
+			$this.removeClass('input_active');
+			$this.val('选择');
+		 }else{
+		 	$('.select_content>ul>li>input').removeClass('input_active');
+			$('.select_content>ul>li>input').val('选择');
+		 	$this.attr('class','input_active');
+			$this.val('已选择');
+		 }
+
+	});
+	//当商品为空的时候
+	if($('.select_content>ul>li').length <1){
+		$('.select_content_tishi').css('display','block');
+	}else{
+		$('.select_content_tishi').css('display','none');
+	}
+})
+</script>
+
+	</body>
+
+</html>

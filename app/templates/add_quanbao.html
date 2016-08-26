@@ -1,0 +1,749 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dth HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dth">
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>新建券包</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/ace.min.css" />
+<link rel="stylesheet" href="css/pg_shangpin.css" />
+<link rel="stylesheet" href="css/style.css" />
+<!-- <link rel="stylesheet" href="css/ace-rtl.min.css" /> -->
+<link rel="stylesheet" href="css/zz.css" />
+<link rel="stylesheet" href="css/youhuiquan.css" />
+<link rel="stylesheet" href="css/quanbao.css" />
+<!--[if lte IE 8]>
+  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="sz_hidescrllo">
+<!-- head -->
+<div class="nav_daohang">
+	<div class="nav_1"><a href="#">营销系统</a></div>
+	<div class="nav_content">
+		<a class="a_active" href="pg_setwenan.html">拼购</a>
+		<a href="youpin_bgo.html">优品</a>
+		<a href="yunshuo_bgo.html">云说</a>
+		<a href="#">抢购</a>
+		<a href="youhuiquan_bgo.html">优惠券</a>
+	</div>
+	<div class="nav_2">
+		<img src="images/PCimg/icon_sb.jpg">
+		<span>
+			好运妹一号<small></small>
+		</span>
+		<img class="dsj" src="images/dsj.png">
+		<ul class="nav_shezhi">
+			<li><a href="#"><img src="images/shezhi.png">设置</a></li>
+			<li><a href="#"><img src="images/zhuye.png">主页</a></li>
+			<li><a href="#"><img src="images/tuichu.png">退出</a></li>
+		</ul>
+	</div>
+	<div class="nav_clear"></div>
+</div>
+<!--end head -->
+<div class="main-container min__width" id="main-container">
+	<!--左侧菜单 Start-->
+	<div class="main-container-inner">
+		<!-- <a class="menu-toggler" id="menu-toggler" href="#">
+			<span class="menu-text"></span>
+		</a> -->
+		<div class="sidebar" id="sidebar"><!-- zca_active为选中样式 -->
+			<ul class="nav nav-list">
+				<li>
+					<a href="youhuiquan_bgo.html" class="dropdown-toggle zca_active">
+						<i class="icon-cogs"></i>
+						<span class="menu-text"> 券包管理 </span>
+					</a>
+				</li>
+				<li>
+					<a href="register_give.html" class="dropdown-toggle"> <i class="icon-tag"></i>
+						<span class="menu-text">注册送券</span>
+					</a>
+				</li>
+				<li>
+					<a href="buy_give.html" class="dropdown-toggle"> <i class="icon-tags"></i>
+						<span class="menu-text">购物送券</span>
+					</a>
+				</li>
+				<li>
+					<a href="youhuiquan_hezuo.html" class="dropdown-toggle"> <i class="icon-tasks"></i>
+						<span class="menu-text">渠道合作</span>
+					</a>
+				</li>
+				<li>
+					<a href="expository.html" class="dropdown-toggle"> <i class="icon-bullhorn"></i>
+						<span class="menu-text">优惠券使用说明</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--左侧菜单 End-->
+	<div class="main-content min_width">
+			<div class="breadcrumbs" id="breadcrumbs">
+				 <div class="nav_suoyin">
+					<span>
+						<i class=""></i>
+						<a href="javascript:void(0)" class="cleardecor">优惠券</a>
+					</span>
+						>
+					<span>
+						<i class=""></i>
+						<a href="youhuiquan_bgo.html" class="cleardecor">券包管理</a>
+					</span>
+						>
+					<span>
+						<i class=""></i>
+						<a href="javascript:void(0)" class="cleardecor">新建券包</a>
+					</span>
+				</div>
+			 </div>
+			<div class="shangpin_content">
+				<!-- 右侧顶部内容 -->
+				<a href="youhuiquan_bgo.html" class="quanbao_btn ">券包</a>
+				<a href="quanbao_ffjl.html" class="quanbao_btn ">发放记录</a>
+				<a href="add_quanbao.html" class="quanbao_btn quanbao_btn_active">新建券包</a>
+				<p class="pingou_title">券包新建</p>
+				<!-- 右侧顶部内容 end-->
+				<!-- 右侧主要内容 -->
+				<form method="post" id="ListForm" action="">
+					<div class="fm_content tyx addqb_divww">
+						<div><span class="tzw">*</span>券包名称：</div>
+						<div class="order_input activity_name">
+							<input type="text"class="width_input width500_input">
+							<a href="javascript:void(0)" class="quanbao_btn djq_btn">创建代金券</a>
+							<a href="javascript:void(0)" class="quanbao_btn zkq_btn">创建折扣券</a>
+						</div>
+
+					</div>
+					<div class="fm_content tyx addqb_divww margin20 displaynone existYhj">
+						<div>已建优惠券：</div>
+						<div class="yhq_rq"></div>
+					</div>
+					<div class="fm_content tyx addqb_divww">
+						<div><span class="tzw">*</span>创建数量：</div>
+						<div>
+							<input type="text"  class="width_input width150_input cjsl_input">份
+							<input id="len_select" class="xzSelect" type="checkbox"><label for="len_select" class="xzSelect">不限数量（请谨慎选择）</label>
+						</div>
+					</div>
+					<div class="fm_content tyx addqb_divww">
+						<div>发放方式：</div>
+						<div>
+							<input id="zd_get" class="xzSelect clearmargin" type="radio" name="get_xz" checked><label for="zd_get" class="xzSelect">主动领取</label>
+							<input id="xt_get" class="xzSelect" type="radio" name="get_xz"><label for="xt_get" class="xzSelect">系统发放</label>
+						</div>
+					</div>
+					<div class="fm_content tyx addqb_divww lqsj_sz">
+						<div>领取时间：</div>
+						<div>
+							<input type="text" class="width150_input width_input nianyueri" >至&nbsp;&nbsp;&nbsp;<input type="text" class="width150_input width_input nianyueri">
+						</div>
+					</div>
+					<div class="fm_content tyx addqb_divww">
+						<div>备注：</div>
+						<div><textarea class="text_beizhu" placeholder="200个字以内" maxlength="200"></textarea></div>
+					</div>
+					<div class="fm_content tyx addqb_divww">
+						<div></div>
+						<div>
+							<a href="javascript:void(0)" class="quanbao_btn tj_btn">提交</a>
+							<a href="javascript:history.go(-1)" class="quanbao_btn ">返回</a>
+						</div>
+					</div>
+				</form>
+			</div>				
+	</div>
+</div>
+<!-- 创建代金券模态窗口 -->
+    <div class="modal fade" id="djqmodal" data-backdrop="static" data-keyboard="false" data-yhqtype="0">
+        <div class="modal-dialog">
+            <div class="modal-content modal_wd">
+            	<div class="modal-header">
+					<button type="button" class="close sc_quxiao">×</button>
+					<h4 class="modal-title" id="myModalLabel">
+					  代金券
+					</h4>
+				</div>
+                <div class="modal-body">
+                  <form id="dj_form" action="">
+                   <fieldset>
+                  	<input type="hidden" name="couponsNominalType_dj" value="VOUCHER" />
+                    <div class="panel-body text-center clearsxpadding">
+                       <div class="row form-group">
+							<div class="col-xs-3  text-right addyhjmodal"><span class="tzw">*</span>券名称：</div>
+							<div class="col-xs-9  text-left clearpadding"><input type="text" name="couponsName_dj" class="form-control padleft djq_name" placeholder="40个字以内" maxlength="40"></div>
+						</div>
+						<div class="row form-group">
+							<div class="col-xs-3 text-right addyhjmodal"><span class="tzw">*</span>面值：</div>
+							<div class="col-xs-9 text-left clearpadding"><input type="text" name="amount_dj" class="width_input padleft width150_input width_100 yhq_yuan" maxlength="5">元</div>
+						</div>
+						<div class="row form-group">
+							<div class="col-xs-3 text-right addyhjmodal"><span class="tzw">*</span>订单金额：</div>
+							<div class="col-xs-9 text-left clearpadding">满<input type="text" name="condition_dj" class="width_input padleft margin_zy10 width_100 yhq_mane" maxlength="5">可使用</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-3 text-right addyhjmodal"><span class="tzw">*</span>使用有效期：</div>
+							<div class="col-xs-9 text-left clearpadding">
+								<input id="gd_time" class="xzSelect clearmargin" type="radio" name="validDateType_dj" checked>
+								<label for="gd_time" class="xzSelect">固定时间段</label>
+								<span class="shiyongtime_tishi">固定时间段内有效</span>
+								<div class="gdTime_div useyxq">
+									<input name="useStart_dj" type="text" class="width_input width150_input nianyueri kaishi_time" placeholder="开始时间" >至&nbsp;&nbsp;&nbsp;<input name="useEnd_dj" type="text" class="width_input width150_input nianyueri jieshu_time" placeholder="结束时间">
+								</div>
+								<input id="lq_time" class="xzSelect clearmargin" type="radio" name="validDateType_dj">
+								<label for="lq_time" class="xzSelect">领取后生成</label>
+								<span class="shiyongtime_tishi">成功领取后开始计算有效期</span>
+								<div class="lqTime_div useyxq">
+									<input name="validDaysStart_dj" type="text" class="width_input sx_time" maxlength="3">天后生效<input name="validDays_dj" type="text" class="width_input yx_time" maxlength="3">天内有效
+								</div>
+							</div>
+						</div>
+                    </div>
+                   </fieldset>
+                  </form>
+                </div>
+                <div class="modal-footer modal_dibu">
+                    <button name="dj_form" type="button" class="btn btn-primary btn-block add_yhq_dj">创建</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+ <!-- 创建代金券模态窗口 end-->
+ <!-- 创建折扣券模态窗口 -->
+    <div class="modal fade" id="zkqmodal" data-backdrop="static" data-keyboard="false" data-yhqtype="1">
+        <div class="modal-dialog">
+            <div class="modal-content modal_wd">
+                <div class="modal-header">
+					<button type="button" class="close sc_quxiao">×</button>
+					<h4 class="modal-title" id="myModalLabel">
+					  折扣券
+					</h4>
+				</div>
+                <div class="modal-body">
+				 <form id="zk_form" action="">
+				  	<fieldset>
+				  	 <input type="hidden" name="couponsNominalType_zk" value="DISCOUNT" />
+					 <div class="panel-body text-center clearsxpadding">
+					   <div class="row form-group">
+							<div class="col-xs-3 text-right addyhjmodal"><span class="tzw">*</span>券名称：</div>
+							<div class="col-xs-9 text-left clearpadding"><input name="couponsName_zk" type="text"  class="form-control padleft zqq_name" placeholder="40个字以内" maxlength="40" ></div>
+						</div>
+						<div class="row form-group">
+							<div class="col-xs-3 text-right addyhjmodal"><span class="tzw">*</span>折扣：</div>
+							<div class="col-xs-9 text-left clearpadding"><input name="discount_zk" type="text" class="width_input padleft width150_input width_100 yhq_zhe" maxlength="3">折</div>
+						</div>
+						<div class="row form-group">
+							<div class="col-xs-3 text-right addyhjmodal"><span class="tzw">*</span>最大面值：</div>
+							<div class="col-xs-9 text-left clearpadding">
+								<input name="amount_zk" type="text" class="width_input width150_input width_100 padleft mianzhi_input yhq_mainzhi" maxlength="5">元
+								<input name="confine_zk" id="mianzhi_select" class="xzSelect" type="checkbox"><label for="mianzhi_select" class="xzSelect">不限制</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-3 text-right addyhjmodal"><span class="tzw">*</span>使用有效期：</div>
+							<div class="col-xs-9 text-left clearpadding">
+								<input name="validDateType_zk" id="zq_gd_time" class="xzSelect clearmargin" type="radio" checked><label for="zq_gd_time" class="xzSelect">固定时间段</label>
+								<span class="shiyongtime_tishi">固定时间段内有效</span>
+								<div class="gdTime_div useyxq">
+									<input name="useStart_zk" type="text" class="width_input width150_input nianyueri zq_kaishi_time" placeholder="开始时间" >至&nbsp;&nbsp;&nbsp;<input name="useEnd_zk" type="text" class="width_input width150_input nianyueri zq_jieshu_time" placeholder="结束时间">
+								</div>
+								<input name="validDateType_zk" id="zq_lq_time" class="xzSelect clearmargin" type="radio"><label for="zq_lq_time" class="xzSelect">领取后生成</label>
+								<span class="shiyongtime_tishi">成功领取后开始计算有效期</span>
+								<div class="lqTime_div useyxq">
+									<input name="validDaysStart_zk" type="text" class="width_input zq_sx_time" >天后生效<input name="validDays_zk" type="text" class="width_input zq_yx_time" maxlength="3">天内有效
+								</div>
+							</div>
+						</div>
+					</div>
+					</fieldset>
+				 </form>
+                </div>
+                <div class="modal-footer modal_dibu">
+                    <button  name="zk_form" type="button" class="btn btn-primary btn-block add_yhq_zk">创建</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+ <!-- 创建折扣券模态窗口 end-->
+	<script src="js/jquery.min.js"></script>	
+	<script src="js/bootstrap.js"></script>
+	<script src="js/laydate/laydate.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<!-- messages_zh.js是validate验证框架中文默认提示文本 -->
+	<script src="js/messages_zh.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+					//验证通用设置
+					$.validator.setDefaults({
+					 		//禁止失去焦点验证
+					 		onfocusout: false,
+					 		//禁止输入时验证
+							onkeyup: false,
+							//错误信息提示modal生成
+							showErrors: function(errorMap, errorList) {   
+					            var tsmodal;  
+					            $.each(errorList, function(i,v){  
+					              //把错误信息字符串当成参数传给nulltishi方法用来动态生成一个modal
+					              tsmodal = $(nulltishi(v.message));
+					              //把2个模态窗口的层级变低
+					              $('#djqmodal,#zkqmodal').css({'zIndex':'1'});
+					              //把提示信息的模态窗口给显示出来
+					              tsmodal.modal();
+					              //给每个遮罩id变为不同
+					              modalid();
+					              //执行一个就return出去
+					              return false;
+					            }); 
+					            
+					        } 
+					});
+					$("#dj_form").validate({
+							//只验证不提交，false为验证成功提交
+							debug:true,
+							//自定义验证规则
+							rules:{
+								couponsName_dj:{
+									required:true,
+									maxlength:40
+								},
+								amount_dj:{
+									required:true,
+									number:true,
+									maxlength:5
+								},
+								condition_dj:{
+									required:true,
+									number:true,
+									maxlength:5
+								},
+								useStart_dj:{
+									required:"#gd_time:checked"
+								},
+								useEnd_dj:{
+									required:"#gd_time:checked"
+								},
+								validDaysStart_dj:{
+									required:"#lq_time:checked",
+									digits:"#lq_time:checked",
+									maxlength:3
+								},
+								validDays_dj:{
+									required:"#lq_time:checked",
+									digits:"#lq_time:checked",
+									maxlength:3
+								}
+							},
+							//自定义验证提示消息
+							messages:
+							{
+								couponsName_dj:{
+									required:"券名称不能为空",
+								   	maxlength:"字符不能超过40个"
+								},
+								amount_dj:{
+									required:"面值不能为空",
+									number:"面值不能为空必须为合法数字",
+									maxlength:"字符不能超过5个"
+								},
+								condition_dj:{
+									required:"满多少元可使用不能为空",
+									number:"满多少元可使用必须为合法数字",
+									maxlength:"字符不能超过5个"
+								},
+								useStart_dj:{
+									required:"开始时间不能为空"
+								},
+								useEnd_dj:{
+									required:"结束时间不能为空"
+								},
+								validDaysStart_dj:{
+									required:"多少天后生效不能为空",
+									digits:"多少天后生效必须为整数",
+									maxlength:"数字不能超过3个"
+								},
+								validDays_dj:{
+									required:"多少天内有效不能为空",
+									digits:"多少天内有效必须为整数",
+									maxlength:"数字不能超过3个"
+								}
+							}, 
+							
+					});
+					$("#zk_form").validate({
+						//只验证不提交，false为验证成功提交
+						debug:true,
+						//自定义验证规则
+						rules:{
+								couponsName_zk:{
+									required:true,
+									maxlength:40
+								},
+								discount_zk:{
+									required:true,
+									number:true,
+									max:10,
+									maxlength:3
+								},
+								amount_zk:{
+									required:true,
+									number:true,
+									maxlength:5
+								},
+								useStart_zk:{
+									required:"#zq_gd_time:checked"
+								},
+								useEnd_zk:{
+									required:"#zq_gd_time:checked"
+								},
+								validDaysStart_zk:{
+									required:"#zq_lq_time:checked",
+									digits:"#zq_lq_time:checked",
+									maxlength:5
+								},
+								validDays_zk:{
+									required:"#zq_lq_time:checked",
+									digits:"#zq_lq_time:checked",
+									maxlength:5
+								}
+							},
+							//自定义验证提示消息
+							messages:
+							{
+								couponsName_zk:{
+									required:"券名称不能为空",
+								   	maxlength:"字符不能超过40个"
+								},
+								discount_zk:{
+									required:"折扣率不能为空",
+									number:"折扣率必须为合法数字",
+									max:"折扣率不能大于10",
+									maxlength:"字符不能超过3个"
+								},
+								amount_zk:{
+									required:"最大面值不能为空",
+									number:"最大面值必须为合法数字",
+									maxlength:"字符不能超过5个"
+								},
+								useStart_zk:{
+									required:"开始时间不能为空"
+								},
+								useEnd_zk:{
+									required:"结束时间不能为空"
+								},
+								validDaysStart_zk:{
+									required:"多少天后生效不能为空",
+									digits:"多少天后生效必须为整数",
+									maxlength:"数字不能超过3个"
+								},
+								validDays_zk:{
+									required:"多少天内有效不能为空",
+									digits:"多少天内有效必须为整数",
+									maxlength:"数字不能超过3个"
+								}
+							}
+
+					});
+					function nulltishi(str){
+						var str = '<div class="modal fade" id="nulltsmodal" data-backdrop="static" data-keyboard="false"><div class="modal-dialog"><div class="modal-content ljff_max_width"><div class="modal-body"><div class="panel-body text-center">'+str+'</div></div><div class="modal-footer modal_dibu"><button type="button" class="btn btn-primary nullts_quxiao"">确定</button></div></div></div></div>';
+						return str;
+					}
+					function modalid(){
+						$('.modal-backdrop').each(function(ind,ele) {
+					    	$(this).attr('id', 'modalid_'+ind);
+						});
+					}
+					$(document).on('click','.nullts_quxiao',function(){
+						$('#nulltsmodal').remove();
+						$('#modalid_1').remove();
+						$('#djqmodal,#zkqmodal').css({'zIndex':'1040'});
+					});
+					// $('.cjsl_input,.yhq_yuan,.yhq_mane,.sx_time,.yx_time,.yhq_zhe,.yhq_mainzhi,.zq_sx_time,.zq_yx_time').keyup(function(){
+					// 	//当val中有值得时候再做判断
+					// 	if($(this).val().length>0){
+					// 		//当输入的值不是数字或小数点的时候提示
+					// 		if (!(/^[\d]+\.?\d*$/.test($(this).val()))){
+					// 			alert('只能输入数字和.');
+					// 			$(this).val('');
+					// 		}
+					// 		//输入折扣的时候判断是否大于10折大于10折算10折
+					// 		if($(this).hasClass('yhq_zhe')){
+					// 			(parseInt($(this).val()) > 10) ? $(this).val(10): $(this).val();
+					// 		}
+					// 	}
+					// });
+					//自定义验证方法
+					// $.validator.addMethod("numberdian",function(value,element,params){  
+						
+					// },"必须为数字可以带小数点");
+					//点击选择时间类型触发函数
+					$('input[name="validDateType_dj"]').click(function(){
+						if($(this).attr('id') == 'gd_time'&& $(this).is(':checked')){
+							console.log('我点中的是固定时间');
+							jyfoo(1);
+						}else if($(this).attr('id') == 'lq_time' && $(this).is(':checked')){
+							console.log('我点中的是领取时间');
+							jyfoo(2);
+						}
+					});
+					$('input[name="validDateType_zk"]').click(function(){
+						if($(this).attr('id') == 'zq_gd_time'&& $(this).is(':checked')){
+							console.log('我点中的是固定时间');
+							jyfoo(3);
+						}else if($(this).attr('id') == 'zq_lq_time' && $(this).is(':checked')){
+							console.log('我点中的是领取时间');
+							jyfoo(4);
+						}
+					});
+					//当点击编辑进入本页后执行
+					showmuban1();
+					isdisabled1();
+					//点击x关闭模态窗口
+					$('.sc_quxiao').click(function(){
+						$('#djqmodal').modal('hide');
+						$('#zkqmodal').modal('hide');
+						$(this).closest('.modal').find('form')[0].reset();
+					});
+					//点击删除，删除一个优惠券
+					$(document).on('click','.yhq_remove',function(){
+						$(this).closest('.yhq_muban').remove();
+						showmuban1();
+					});
+					//点击创建或修改，生成一个优惠券或修改一个优惠券
+					$('.add_yhq_dj,.add_yhq_zk,.updata_dj,updata_zk').click(function(){
+					    var yhq_lx=$(this).closest('.modal').data('yhqtype');
+					    var iclass = $(this);
+					    	if( iclass.hasClass('add_yhq_dj') || iclass.hasClass('add_yhq_zk')){
+						    	//点击创建后做什么事。
+						    	var parent = $('.yhq_rq');
+								var len,type,unit,condition,time,name;
+						    	if(yhq_lx =='0'){
+						    		//提交触发验证效果
+							    	if($('#dj_form').valid()){
+						    			$("#dj_form").submit();
+							    	}else{
+							    		return false;
+							    	}
+							    	//表示是代金券
+							    	name = $('.djq_name').val();
+							    	unit = '元';
+							    	type ='代金券';
+							    	len = $('.yhq_yuan').val();
+							    	condition ='满'+($('.yhq_mane').val())+'元可用';
+							    	time = getYhqTime({'yhqsytime':'validDateType_dj','gd_id':'gd_time','lq_id':'lq_time','qb':'0'});
+							    }else if(yhq_lx =='1'){
+							    	//提交触发验证效果
+							    	if($('#zk_form').valid()){
+						    			$('#zk_form').submit();
+							    	}else{
+							    		return false;
+							    	}
+							    	//表示是折扣券
+							    	name = $('.zqq_name').val();
+							    	unit = '折';
+							    	type ='折扣券';
+							    	len = $('.yhq_zhe').val();
+							    	var yhqmz =$('.yhq_mainzhi').val();
+							    	condition = (yhqmz =='不限制'?'不限制': '最高可省'+yhqmz+'元');
+							    	time = getYhqTime({'yhqsytime':'validDateType_zk','gd_id':'zq_gd_time','lq_id':'zq_lq_time','qb':'1'});
+							    }else{
+							    	alert('创建时分不清优惠券的类型，请联系管理员');
+							    }
+								var obj = addYhq(len,type,unit,condition,time,name);
+								parent.append(obj);
+							}else if( iclass.hasClass('updata_dj') || iclass.hasClass('updata_zk')){
+								//点击修改后做什么事。
+							}else{
+								console.log('点击创建或修改出现了bug');
+							}
+							//不管修改还是创建最后都关闭模态窗口并且清空form表单
+							$('#djqmodal,#zkqmodal').modal('hide');
+							$('.existYhj').css('display','block');
+							$(this).closest('.modal').find('form')[0].reset();
+					});
+					//点击创建代金券
+					$('.djq_btn').click(function(){
+		                $('#djqmodal').modal().find('.modal-footer button').addClass('add_yhq_dj').removeClass('updata_dj').text('创建');
+		            });
+		            //点击创建折扣券券
+		            $('.zkq_btn').click(function(){
+		                $('#zkqmodal').modal().find('.modal-footer button').addClass('add_yhq_zk').removeClass('updata_zk').text('创建');
+		            });
+					$('.nianyueri').click(function(){
+						laydate({
+							istime:true,
+							format:'YYYY-MM-DD hh:mm',
+							issure: true,
+							min: laydate.now()
+						});
+		 			});
+					$('.tj_btn').click(function(){
+						location.href="youhuiquan_bgo.html";
+					});
+					// 判断是否设置数量无上限
+					$('#len_select').click(function(){
+						isdisabled1();
+					});
+					$('#mianzhi_select').click(function(){
+						isdisabled2();
+					});
+					// 判断发放方式
+					$('input[name="get_xz"]').click(function(){
+						if($(this).is(':checked')){
+							if($(this).attr('id')=='xt_get'){
+								$('.lqsj_sz').css('display','none');
+								$('.lqsj_sz input').val(" ");
+							}else{
+								$('.lqsj_sz').css('display','block');
+							}
+						}
+					});
+					//点击编辑弹出编辑模态窗口
+					$(document).on('click','.yhq_update',function(){
+						var quantype = $(this).closest('.yhq_muban').find('.yhq_left_name').text();
+						//获取到当前创建好的模态窗口中的需要的值
+						if(quantype =='代金券'){
+							$('#djqmodal').modal().find('.modal-footer button').addClass('updata_dj').removeClass('add_yhq_dj').text('修改');
+
+						}else if(quantype == '折扣券'){
+							$('#zkqmodal').modal().find('.modal-footer button').addClass('updata_zk').removeClass('add_yhq_zk').text('修改');
+							//点击编辑后判断一次
+							
+							isdisabled2();
+						}else{
+							alert('修改点击失败，请找程序员维修');
+						}
+					});
+
+					
+					//   len:钱或折扣率/type:优惠券类型/unit:折或元/condition:使用条件/time:使用时间/name:优惠券名称
+					function addYhq(len,type,unit,condition,time,name){
+						var muban ='<div class="yhq_muban">';
+							muban +='<div class="yhq_muban_body" data-yhqname='+name+'>';
+							muban +='<div class="yhq_left">';
+							muban +='<p class="yhq_left_xg"><span>'+len+'</span>'+unit+'</p>';
+							muban +='<p class="yhq_left_name">'+type+'</p>';
+							muban +='</div>';
+							muban +='<div class="yhq_right">';
+							muban +='<p class="yhq_sytj">'+condition+'</p>';
+							muban +='<p class="yhq_syqx">'+time+'</p>';
+							muban +='<p>全场通用</p>';						
+							muban +='</div>';
+							muban +='</div>';
+							muban +='<div class="yhq_muban_footer">';
+							muban +='<div class="yhq_update hover_sx">';
+							muban +='<i class="icon-edit"></i>';
+							muban +='</div>';
+							muban +='<div class="yhq_remove hover_sx">';
+							muban +='<i class="icon-trash"></i>'; 
+							muban +='</div>';
+							muban +='</div>';
+							muban +='</div>';
+							return muban;
+					}
+					function getYhqTime(obj){
+						var _this = $('input[name="'+obj.yhqsytime+'"]');
+						var time;
+						_this.each(function(index,element){
+							if($(element).is(':checked')){
+								if($(element).attr('id')==obj.gd_id){
+									if(obj.qb == 0){
+										time =$('.kaishi_time').val()+'~'+$('.jieshu_time').val();
+									
+									}else{
+										time =$('.zq_kaishi_time').val()+'~'+$('.zq_jieshu_time').val();
+										
+									}
+								}else if($(element).attr('id')==obj.lq_id){
+									if(obj.qb == 0){
+										time ='领取'+$('.sx_time').val()+'天后生效/'+$('.yx_time').val()+'天内可用';
+										
+									}else{
+										time ='领取'+$('.zq_sx_time').val()+'天后生效/'+$('.zq_yx_time').val()+'天内可用';
+									
+									}
+								}else{
+									alert('时间设置错误');
+								}
+							}
+						});
+						return time;
+					}
+				})
+				function jyfoo(ind){
+						var obj;
+						switch(ind)
+						{
+						case 1:
+							  //选中代金券中的固定时间段执行
+							obj=[{name1:'useStart_dj',name2:'useEnd_dj'},{name1:'validDaysStart_dj',name2:'validDays_dj'}];
+							break;
+						case 2:
+							 //选中代金券中的领取后时间段执行
+							 obj=[{name1:'validDaysStart_dj',name2:'validDays_dj'},{name1:'useStart_dj',name2:'useEnd_dj'}];
+							break;
+						case 3:
+							//选中折扣券中的固定时间段执行
+							obj=[{name1:'useStart_zk',name2:'useEnd_zk'},{name1:'validDaysStart_zk',name2:'validDays_zk'}];
+							break;
+						case 4:
+							//选中折扣券中的领取后时间段执行
+							obj=[{name1:'validDaysStart_zk',name2:'validDays_zk'},{name1:'useStart_zk',name2:'useEnd_zk'}];
+							break;
+						default:
+							alert('禁用设置出错，请查看bug');
+						}
+						//传来的值为1的时候禁用什么时间至什么时间
+						$('input[name='+obj[0].name1+'],input[name='+obj[0].name2+']').attr('disabled',false);	
+						//传来的值为2的时候禁用多少天生效和多少天内有效
+						$('input[name='+obj[1].name1+'],input[name='+obj[1].name2+']').attr('disabled',true);	
+				}
+					
+					function isdisabled1(){
+						if($('#len_select').is(':checked')){
+							$('.cjsl_input').attr('disabled',true).val("不限数量");
+						}else{
+							$('.cjsl_input').attr('disabled',false).val("");
+						}
+					}
+					function isdisabled2(){
+						if($('#mianzhi_select').is(':checked')){
+							$('.mianzhi_input').attr('disabled',true).val("不限制");
+						}else{
+							$('.mianzhi_input').attr('disabled',false).val("");
+						}
+					}
+					function showmuban1(){
+						var len = $('.yhq_remove').closest('.yhq_muban').size();
+						if(len == 0){
+						 	$('.existYhj').css('display','none');
+						}
+					}
+					function addHiddeninput(params){
+					//couponsName：名称，discount：，amount：面值，confine：，validDateType：选择日期格式，useStart：开始日期，useEnd：结束日期，validDaysStart：生效日期，validDays：有效日期，condition：满多少元，couponsNominalType：优惠券类型，
+					var	input = '<input type="hidden"  name="couponsName" value="'+params.couponsName+'"/>';
+					    input += '<input type="hidden"  name="discount" value="'+params.discount+'"/>';
+					    input += '<input type="hidden"  name="amount" value="'+params.amount+'"/>';
+					    input += '<input type="hidden"  name="confine" value="'+params.confine+'"/>';
+					    input += '<input type="hidden"  name="validDateType" value="'+params.validDateType+'"/>';
+					    input += '<input type="hidden"  name="useStart" value="'+params.useStart+'"/>';
+					    input += '<input type="hidden"  name="useEnd" value="'+params.useEnd+'"/>';
+					    input += '<input type="hidden"  name="validDaysStart" value="'+params.validDaysStart+'"/>';
+					    input += '<input type="hidden"  name="validDays" value="'+params.validDays+'"/>';
+					    input += '<input type="hidden"  name="condition" value="'+params.condition+'"/>';
+					    input += '<input type="hidden"  name="couponsNominalType" value="'+params.couponsNominalType+'"/>';
+					    return input;
+					}
+					
+	</script>
+	</body>
+
+</html>

@@ -1,0 +1,78 @@
+/*抢购PC页面*/
+a:hover{text-decoration:none}
+.fast_buy{position: relative;width:1200px}
+.text-center{text-align:center}
+.nav_product_main{margin:10px auto;width:100%}
+.fast_buy_list{position:relative;width:1000px}
+.list_box_all{width:1000px}
+.list_box{position:relative;overflow:hidden;box-sizing:content-box;margin:15px 0;width:100%;height:300px;border:1px solid #E5E5E5;background:#F5F5F5;cursor:pointer}
+.fastImg{overflow:hidden;width:750px;height:300px;position: relative;}
+.sell_all{ position: absolute;z-index: 9; width: 100px; height: 100px;border-radius: 50%; background: rgba(0,0,0,.8); font-size: 18px; color: #FFF; text-align: center; top: 50%; margin-top: -50px; left: 50%; margin-left: -50px; display: block; }
+.sell_all span{top: 35px;position: relative; height: 30px; line-height: 30px;}
+.list_box:hover .fastImg img{-webkit-transform:scale(1.02);-moz-transform:scale(1.02);-o-transform:scale(1.02);transform:scale(1.02);-ms-transform:scale(1.02)}
+.fastImg img{float:left;display:block;width:750px;height:300px;transition:all 1s;z-index: 2;}
+.fast_cont_buy_box{float:right;width:250px}
+.fast_buy_detail{overflow:hidden;padding:0 15px}
+.list_box h2{display:-webkit-box;overflow:hidden;padding:15px 0 0 0;width:100%;height:46px;color:#333;text-overflow:ellipsis;font-weight:400;font-size:16px;line-height:24px;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.fast_now_price{position:relative;overflow:hidden;padding-top:15px;height:40px;line-height:40px}
+.fast_now_price i{float:left;display:block;color:#CF1E2C;letter-spacing:-2px;font-style:normal;font-size:24px}
+.fast_now_price i strong{font-weight:400;font-size:34px}
+.fast_now_price em{float:right;display:block;margin:9px 0 0;width:45px;height:24px;background:#333;color:#FFF;text-align:center;font-style:normal;font-size:12px;line-height:24px}
+.fast_past_price{display:block;width:100%;height:30px;color:#888;text-decoration:line-through;font-size:12px;line-height:30px}
+.fast_buy_bar{overflow:hidden;padding:10px 0}
+.fast_buy_bar_title{color:#666}
+
+
+
+/*进度条*/
+
+.sellNum{float:left;margin:5px 0;width:218px;height:4px;border:1px solid #f5a9af;border-radius:5px;background:#FFF}
+.sellNumber{height:4px;background:#f5a9af}
+a.fast_buy_button:link,a.fast_buy_button:hover{display:block;margin:4px 0 0 0;width:208px;height:50px;border-radius:6px;color:#FFF;font-weight:700;font-size:20px;line-height:50px}
+.buy_now:link{background:#CF1E2C; color: #FFF;}
+.buy_now:hover{background:#eb4447; color: #FFF;}
+.buy_end{background:#AAA}
+.buy_waiting{background:#2E940F}
+.fast_buy_time{width:100%;height:40px;text-align:center;line-height:40px}
+.time_content span{padding:0 3px;color:#CF1E2C;font-weight:400;font-size:12px}
+.buyer_time a:hover{color:#005aa0}
+
+
+/*右侧菜单*/
+
+.fast_buy_time_colck{position: fixed;left: 50%;margin-left: 420px;width:180px;border:1px solid #E5E5E5}
+.accordion li>a{position:relative;display:block;width:180px;background:#333;color:#FFF;text-align:center;font-size:18px;line-height:36px}
+.activeBox{display:block;padding:0 5px;color:#CF1E2C;text-align:center;font-weight:700;font-size:16px}
+.accordion>li:hover>a span,.accordion>li:target>a span,.accordion>li>a.active span{background:#3e5706;color:#fdfdfd}
+.accordion>li.active>a{background:#CF1E2C;color:#FFF}
+.sub-menu,.sub-menu li{width:180px}
+.sub-menu li a{width: 180px;border-bottom:1px solid #E5E5E5;background:#FFF;color:#666;font-size:16px;line-height:50px}
+.activeBox>a{padding:10px 0 0}
+.colck{display:inline-block;width:16px;height:16px;background:url(../images/PCimg/icon_s_clock.png) 0 -18px no-repeat;background-size:16px;line-height:36px}
+.colck_now{position:relative;margin-left:64px;margin-left:16px\9;display:block;width:52px;height:52px;background:url(../images/PCimg/icon_b_clock.png) no-repeat;top: 10px;}
+
+
+
+
+/*抢购成功页面*/
+.fast_buy_success{position:relative;display:block;margin:100px auto;width:600px;height:400px;text-align:center}
+.buy_success{position:relative;margin:30px 0;color:#2E940F;font-size:24px}
+.fast_buy_success_icon{position:absolute;top:-5px;width:35px;height:35px;background-repeat:no-repeat}
+.fast_buy_fail_icon{position:absolute;top:-5px;width:148px;height:171px;background-repeat:no-repeat}
+.fast_buy_success_icon{left:155px;background:url(../images/PCimg/icon_cg.png);}
+.fast_buy_fail_icon{left: 230px;background:url(../images/PCimg/icon_sb.jpg);}
+.fast_buy_success p{margin-top:35px;color:#333;text-align:center;font-size:16px}
+.fast_buy_success p span{color:#CF1E2C;font-weight:700;font-size:16px}
+a.zz_go_pay{display:block;margin:50px auto 0 auto;width:200px;height:50px;border-radius:8px;background:#CF1E2C;color:#FFF;font-weight:700;font-size:18px;line-height:50px}
+a.zz_go_pay:link,a.zz_go_pay:hover{color: #FFF;}
+/*抢购失败页面*/
+
+.buy_fail{ font-size: 24px; color: #333; padding-top:200px}
+a.zz_go_pay_fail{display:block;margin:50px auto 0 auto;width:120px;height:32px;border: 1px solid #CCC;border-radius:8px;background:#FFF;color:#666;font-size:12px;line-height:32px}
+
+
+
+/*排队等待页面*/
+.fast_buy_waiting_page{font-size: 24px; color: #CF1E2C;}
+.fast_buy_waiting_icon img{width: 60px; height: 20px;}
+.fast_buy_waiting_page p{font-size: 16px; color: #333;margin-top: 25px;}

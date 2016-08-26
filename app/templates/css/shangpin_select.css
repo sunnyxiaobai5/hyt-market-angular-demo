@@ -1,0 +1,89 @@
+.select_pinggou{
+	padding:10px 0 0 10px;
+}
+.select_pinggou>span{
+	padding-right:25px;
+}
+.select_pinggou>span>select{
+	width:100px;	
+}
+.select_pinggou>span>input{
+	width:250px;
+}
+.select_jiegoutt{
+	border-bottom: 1px #E2E2E2 dashed;
+	padding:10px;
+	font-size:16px;
+	color:#70B8E7;
+}
+.select_content{
+	width: 900px;
+	/*background:pink;*/
+	margin:0 auto;
+	text-align:center;
+	padding-bottom:30px;
+}
+.select_content>ul{
+	margin-left:10px;
+	width: 900px;
+	max-height:495px;
+
+}
+.select_content>ul>li{
+	list-style:none;
+	float: left;
+	width: 158px;
+	height: 240px;
+	border:1px solid #CCCCCC;
+	margin: 0 20px 15px 0;
+	text-align: center;
+}
+.select_content>ul>li>img{
+	width: 140px;
+	height: 140px;
+	margin:8px 0;
+}
+.select_content>ul>li>p{
+	margin: 0;
+	height: 40px;
+	overflow: hidden;
+}
+.select_content>ul>li>input.input_active{
+	background: #333;
+}
+.select_content>ul>li>input.input_active:hover{
+	background: #333;
+}
+.select_content>ul>li>input{
+	margin-top:8px;
+	width:80px;
+	height:26px;
+	border:0;
+	border-radius:5px;
+	background: #438EB9;
+	color: #fff;
+	line-height:25px;
+}
+.select_content>ul>li>input:hover{
+	background: #6FB3E0;
+}
+
+.select_index{
+	clear:both;
+}
+.select_index>ul>li>a{
+	margin-left: 10px;
+}
+/*跳转按钮*/
+.dblock{
+	display:block;
+	margin:20px auto;
+}
+/*商品没有的提示*/
+.select_content_tishi{
+	padding:130px 0;
+	font-size:28px;
+	width:900px;
+	margin:0 auto;
+
+}

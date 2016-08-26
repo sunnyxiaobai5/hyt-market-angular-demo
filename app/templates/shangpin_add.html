@@ -1,0 +1,323 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dth HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dth">
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>商品管理</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/ace.min.css" />
+<link rel="stylesheet" href="css/shangpin_add.css" />
+<link rel="stylesheet" href="css/style.css" />
+<!-- <link rel="stylesheet" href="css/ace-rtl.min.css" /> -->
+<link rel="stylesheet" href="css/zz.css" />
+<!--[if lte IE 8]>
+  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+<style>
+	.col-sm-1,.col-sm-10,.col-sm-3.col-sm-9{padding-right: 0;}
+	.col-sm-3,.col-sm-9{padding-left: 0;}
+	
+</style>
+
+</head>
+
+<body>
+<!-- head -->
+<div class="nav_daohang">
+	<div class="nav_1"><a href="#">营销系统</a></div>
+	<div class="nav_content">
+		<a class="a_active" href="pg_setwenan.html">拼购</a>
+		<a href="youpin_bgo.html">优品</a>
+		<a href="yunshuo_bgo.html">云说</a>
+		<a href="#">抢购</a>
+		<a href="youhuiquan_bgo.html">优惠券</a>
+	</div>
+	<div class="nav_2">
+		<img src="images/PCimg/icon_sb.jpg">
+		<span>
+			好运妹一号<small></small>
+		</span>
+		<img class="dsj" src="images/dsj.png">
+		<ul class="nav_shezhi">
+			<li><a href="#"><img src="images/shezhi.png">设置</a></li>
+			<li><a href="#"><img src="images/zhuye.png">主页</a></li>
+			<li><a href="#"><img src="images/tuichu.png">退出</a></li>
+		</ul>
+	</div>
+	<div class="nav_clear"></div>
+</div>
+<!--end head -->
+
+<div class="main-container min__width" id="main-container">
+	<!--左侧菜单 Start-->
+	<div class="main-container-inner">
+		<!-- <a class="menu-toggler" id="menu-toggler" href="#">
+			<span class="menu-text"></span>
+		</a> -->
+
+		<div class="sidebar" id="sidebar">
+			<ul class="nav nav-list">
+				<li>
+					<a href="pg_setwenan.html" class="dropdown-toggle">
+						<i class="icon-dashboard"></i>
+						<span class="menu-text"> 文案设置 </span>
+					</a>
+				</li>
+				<li>
+					<a href="pg_shangpin.html">
+						<i class="icon-text-width"></i>
+						<span class="menu-text"> 商品管理 </span>
+					</a>
+				</li>
+
+				<li>
+					<a href="pg_dingdan.html" class="dropdown-toggle">
+						<i class="icon-desktop"></i>
+						<span class="menu-text"> 拼购订单 </span>
+					</a>
+				</li>
+				<li>
+					<a href="pg_tuikuantongji.html" class="dropdown-toggle">
+						<i class="icon-desktop"></i>
+						<span class="menu-text"> 退款统计 </span>
+					</a>
+				</li>
+				<li class="">
+					<a href="#">
+						<i class="icon-dashboard"></i>
+						<span class="menu-text"> 数据统计 </span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--左侧菜单 End-->
+ 
+	<div class="main-content min_width">
+			   <div class="breadcrumbs" id="breadcrumbs">
+				<!-- <script type="text/javascript">
+					try {
+						ace.settings.check('breadcrumbs', 'fixed')
+					} catch (e) {}
+				</script>
+				 -->
+				 <div class="nav_suoyin">
+					<span>
+						<i class=""></i>
+						<a href="#" class="cleardecor">拼购</a>
+					</span>
+						>
+					<span>
+						<a href="pg_shangpin.html" class="cleardecor">商品管理</a>
+					</span>
+						>
+					<span><a href="javascript:void(0)" class="cleardecor">新增商品</a></span>
+				</div>
+				<!-- .breadcrumb -->
+			    </div>
+
+				<div class="shangpin_content">
+				<!-- 右侧主要内容 -->
+					<p class="pingou_title">第二步：编辑拼购商品</p>
+					<ul class="shangpin_bianji">
+						<li>
+							<div>&nbsp;</div>
+							<div class="li1_div"><img src="images/img.png"></div>
+						</li>
+						<li class="li2 paddbottom">
+							<div>商品：</div>
+							<div class="li2_div">红毛烧52度纯醸</div>
+						</li>
+						<li class="li3 paddbottom">
+							<div><span>*</span>拼购商品名称：</div>
+							<div>
+								<input type="text" placeholder="最多支持20个字">
+								<input type="checkbox"  id="shangpinName"><label for="shangpinName">使用商品名称</label>
+							</div>
+						</li>
+						<li class="li4 paddbottom">
+							<div>商品副标题：</div>
+							<div class="li4_div">1211111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</div>
+						</li>
+						<li class="li5 paddbottom">
+							<div><span>*</span>拼购商品宣传：</div>
+							<div>
+								<textarea></textarea>
+								<input type="checkbox" id="shangpinFubiaoti"><label for="shangpinFubiaoti">使用商品名称</label>
+							</div>
+						</li>
+						<li class="li6 ">
+							<div><span>*</span>拼购主图：</div>
+							<div id="li6_div" class="li6_div">
+								<img id="preview" src="images/img.png">
+							</div>
+							<div class="li6_div1">
+								<input id="file" type="file">
+								<input type="button" value="上传">
+							</div>
+						</li>
+						<li>
+							<div>&nbsp;</div>
+							<div>图片尺寸：宽710像素  高285像素   支持格式：jpg/png/gif</div>
+						</li>
+						<li class="li7 paddbottom">
+							<div>商品原价：</div>
+							<div>30.00元</div>
+						</li>
+						<li class="li9 paddbottom">
+							<div><span>*</span>拼购类型：</div>
+							<div class="li9_right">
+								<div class="li9_div_kbj jisuan">
+									<div class="li9_kbj_guanbi">X</div>
+									<p>团人数：
+									<select class="xz_rs">
+											<option>选择人数</option>
+											<option>3</option>
+											<option>6</option>
+										</select>
+									</p>
+									<p class="li9_kbj_p1">
+										成团价：<input type="text">元
+										<span>销售提成：<input type="text">元</span>
+									</p>
+									<p class="li9_kbj_p2 xg_sx">
+										<span>团库存：<input type="text" sotak="-1">件</span>
+										<span class="color_hui">库存需为团人数的倍数</span>
+									</p>
+									<p class="li9_kbj_p2">
+										团类型：
+										<span><label><input type="checkbox" class="miandanTuan">免单团</label></span>
+										<span>免单<input class="kbg_md" type="text" disabled="disabled">人</span>
+										<span class="color_hui">勾选后成功组团会随机免单指定人数全额退款</span>
+									</p>
+								</div>
+								<div class="add_ll9_kbj">++增加类型++</div>
+								<div class="li9_div_fbj jisuan">
+									<div class="li9_fbj_guanbi">X</div>
+										<p>团人数：3人</p>
+										<p>成团价：52.00元<span class="li9_fbj_span1">销售提成：2.00元</span></p>
+										<p><span class="li9_fbj_span2">库存：</span>36件</p>
+										<p>团类型：免单团 免单2人</p>
+									</div>
+							  </div>
+						</li>
+					
+						<li class="li12 paddbottom">
+							<div>&nbsp;</div>
+							<a href="pg_shangpin.html"><input type="button" value="提交" class="td_btn"></a>
+						</li>
+						
+					</ul>
+					<!-- 右侧主要内容 end-->
+				</div>
+		    </div>				
+	</div>
+</div>	
+<script src="js/jquery.min.js"></script>	
+<script src="js/bootstrap.min.js"></script>
+<script src="js/preview.js"></script>
+<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+<script type="text/javascript">
+$(function(){
+	//改变团人数select就修改sotak属性值
+	$(document).on('change','.xz_rs',function(){
+			var $val=$(this).val();
+			var $sx=$(this).parent('p').siblings('.xg_sx').find('[type=text]');
+			if($val=='选择人数'){
+				$sx.attr('sotak','-1');
+			}else{
+				$sx.attr('sotak',$val);
+			}
+			
+	});
+	// 点击是否免单
+	$(document).on('change','.miandanTuan',function(){
+		var $thiskbg_md=$(this).closest('.li9_kbj_p2').find('.kbg_md');
+		if($thiskbg_md.is(':disabled')){
+		
+			$thiskbg_md.removeAttr('disabled');
+		}else{
+			
+			$thiskbg_md.prop('disabled','true');
+		}
+	});
+	
+	//弹出个人菜单
+	$('.nav_2').bind('click',function(e){
+		$('.nav_shezhi').toggle();
+		e.stopPropagation();//阻止点击事件冒泡到document
+	});
+	$(document).bind('click',function(){
+		$('.nav_shezhi').hide();
+	});
+	//拼购商品名称
+	var $li3checkbox=$('.li3 input[type=checkbox]')
+	var $li3input=$('.li3 input[type=text]');
+	var $biaoti=$('.li2_div').html();
+	 $($li3checkbox).change(function() {
+	 	if($($li3checkbox).is(':checked')==true){
+			$li3input.val($biaoti);
+		}else{
+			$li3input.val('');
+		}
+	 });
+	//拼购商品宣传
+	var $li5checkbox=$('.li5 input[type=checkbox]')
+	var $li5textarea=$('.li5 textarea');
+	var $fubiaoti=$('.li4_div').html();
+	 $($li5checkbox).change(function() {
+	 	if($($li5checkbox).is(':checked')==true){
+			$li5textarea.val($fubiaoti);
+		}else{
+			$li5textarea.val('');
+		}
+	 });
+	//添加第九行
+	$('.add_ll9_kbj').click(function(){
+		var $html=$('.li9_div_kbj').html();
+		var $div=$('<div class="li9_div_kbj jisuan"></div>');
+		 $div.html($html);
+		 if($('.jisuan').length<2)
+		 {
+			$(this).before($div);
+		 }else{alert('最多只能添加2个拼购类型！')}
+	});
+	//删除第九行可编辑列或不可编辑列
+	$(document).on('click','.li9_fbj_guanbi',function(){
+
+		 		$(this).closest('.li9_div_fbj').remove(); 
+		
+	});
+	$(document).on('click','.li9_kbj_guanbi',function(){
+			  if($('.li9_kbj_guanbi').closest('.li9_div_kbj').length<2)
+			  {
+			  		alert('最少要留一个可编辑列');
+		 	  }else{
+		 	 	 $(this).closest('.li9_div_kbj').remove(); 
+		 	  }
+		
+	});
+
+	//图片上传预览
+	$("#file").change(function(){
+		setImagePreview('file','preview','li6_div');//(为input file类型元素的id,图片id,图片容器id)
+	});
+	
+		
+	
+})
+</script>
+	</body>
+
+</html>

@@ -1,0 +1,133 @@
+*{padding: 0; margin: 0;}
+.zz_red{color: #CF1E2C;}
+.font14{font-size: 14px;}
+
+/*商品介绍*/
+.intro{float:left;overflow:hidden;width:980px}
+.intro_title{width:100%;height:40px;color:#333;font-size:14px}
+.intro_title span{font-weight:700;font-size:20px}
+.intro_img{float:left;width:400px}
+.show_img{width:398px;height:398px;border:1px solid #ddd}
+.small_img_ul{overflow:hidden;padding:10px 0 15px 0;width:415px}
+.small_img_list{float:left;margin-right:14px;width:66px;height:66px;border:1px solid #ddd}
+.small_img_list img{width:66px;height:66px}
+.small_img_list:hover{border:1px solid #cf1e2c}
+.small_img_list.selected{border:2px solid #cf1e2c}
+.intro_collect{position:relative;float:left;padding-left:20px;width:160px}
+.collect_icon{position:absolute;top:5px;left:0;width:12px;height:12px;background:url(../images/PCimg/icon.png);background-position:-320px -600px;background-repeat:no-repeat}
+.intro_img,span a{color:#666}
+.intro_con{float:left;display:inline;padding-left:30px;width:510px}
+.intro_con_name p{overflow:hidden;padding-bottom:5px;width:100%;height:40px;color:#333;font-size:16px; }
+
+/*商品详情部分*/
+.intro_con_name .font14{display:block;overflow:hidden;padding-top:5px;height:45px;color:#CF1E2C}
+.intro_con_middle{float:left;width:517px}
+.intro_con_price{position:relative;padding-top:12px;width:315px;height:45px}
+.intro_con_price .old_price{float:left;text-decoration:line-through;font-size:12px}
+.intro_con_price p{float:left;width:120px;color:#cf1e2c;letter-spacing:-1px;font-size:34px}
+.intro_con_price p em{font-style:normal;font-size:24px}
+.special_sale_icon{float:left;margin-right:10px;width:45px;height:24px;background:#333;color:#FFF;text-align:center}
+.zz_phone_buy{position:relative;margin:10px 0;width:200px;height:30px;border-radius:3px;background:#CF1E2C;color:#FFF;font-size:12px;line-height:30px;cursor: pointer;}
+.zz_phone_hide {position: absolute; top: 30px;left: 0; width: 160px; height: 200px; z-index: 10; background: #FFF; border: 1px solid #DDD; text-align: center}
+.zz_phone_hide img{padding: 20px 20px 0 20px;}
+.zz_phone_hide p{font-size: 12px; color: #333;line-height: 20px;text-align: center}
+
+.zz_phone_buy .erweima{position:absolute;top:5px;left:6px;width:18px;height:18px;background:url(../images/PCimg/erweima.png) no-repeat;background-size:18px}
+.phone_price_title{padding-left:32px}
+.phone_price{color:#FFF100;font-weight:700;font-size:14px}
+.intro_con_info{float:left;width:485px;color:#999;font-size:12px}
+
+/*进度条*/
+.fast_buy_bar{overflow:hidden;padding:25px 0;width:210px}
+.fast_buy_bar_title{color:#666}
+.sellNum{float:left;margin:5px 0;width:206px;height:4px;border:1px solid #f5a9af;border-radius:5px;background:#FFF}
+.sellNumber{height:4px;background:#f5a9af}
+a.fast_buy_button{display:block;margin:4px 0 0 0;width:208px;height:50px;border-radius:6px;color:#FFF;font-weight:700;font-size:20px;line-height:50px}
+a.add_buy_car,a.add_buy_sell_out,a.add_buy_go_buy,a.add_buy_go_notice{position:relative;display:block;margin-bottom:10px;width:210px;color:#FFF;text-align:center;text-decoration:none;font-weight:700;font-size:20px; line-height:50px}
+a.add_buy_car{background:#2D940F;}
+a.add_buy_sell_out{background: #A2A2A2;}
+a.add_buy_sell_out:hover{cursor: default;}
+a.add_buy_go_buy{background: #CF1E2C;}
+a.add_buy_go_buy:hover{background: #eb4447;}
+a.add_buy_go_notice{background: #666;}
+.time_content span{padding:0 3px;color:#CF1E2C;font-weight:400;font-size:12px}
+
+.intro_con_place{padding-bottom:30px;width:100%}
+.intro_con_place a{color:#CF1E2C}
+.intro_con_text{padding-bottom:25px;color:#666}
+.intro_con_text span{position:relative;padding:10px 30px 10px 30px;color:#005aa0}
+.return_icon{position:absolute;top:10px;left:5px;width:18px;height:18px;border-radius:4px;background:#005AA0;color:#FFF;text-align:center;font-size:12px;font-family:arial;line-height:18px}
+
+/*相关商品*/
+.intro{margin:20px 0 0 0;width:980px}
+.intro_other{float:right;margin:40px 0 0 0;width:198px;border:1px solid #ddd}
+.intro_other_title{width:100%;height:40px;background:#F8F8F8;line-height:40px}
+.intro_other_title h2{padding:0 10px;color:#333;font-weight:400;font-size:16px}
+.intro_other_title h2 a{float:right;color:#666;text-align:right;font-size:12px}
+.intro_other_main ul li{padding:0 10px;border-top:1px solid #DDD}
+.intro_other_main ul li a:link,.intro_other_main ul li a:visited{display:block;width:180px}
+.intro_other_main ul li a:hover{color:#CF1E2C}
+.intro_other_main ul li img{margin-top:10px;width:180px;height:180px}
+.intro_other_main ul li strong{height:30px;color:#CF1E2C;font-weight:400;font-size:16px;line-height:30px}
+
+
+/*详情*/
+.detail{float:left;margin-top:30px;width:980px}
+.detail_right{float:left;width:980px}
+.detail_con_main{margin:10px auto;width:100%}
+.detail_text{padding:5px 0;color:#333;font-weight:700;font-size:14px}
+.detail_con{padding-bottom:5px;color:#666}
+.detail_con span{color:#333}
+.detail_ewm{padding-top:7px;width:100%;color:#333;text-align:center}
+.detail_ewm img{width:168px;height:168px}
+.product_browse_photo{float:left;width:75px;height:60px}
+.recommend_product_browse_con{float:left;width:110px;height:60px}
+.recommend_product_browse_name{display:block;width:110px;height:20px;line-height:20px}
+.recommend_product_browse_price{margin-top:18px;width:110px;color:#cf1e2c;font-size:16px}
+.product_add{position:absolute;top:35px;right:10px;width:28px;height:28px;background:url(../images/PCimg/icon.png);background-position:-240px -915px;background-repeat:no-repeat}
+.product_sum{position:absolute;top:65px;left:-20px;width:28px;height:28px;background:url(../images/PCimg/icon.png);background-position:-275px -915px;background-repeat:no-repeat}
+
+
+
+
+/*参数切换*/
+.detail_nav{width:978px;height:auto;border:1px solid #ddd}
+.nav_change{float:left;padding:10px 20px;height:16px;border-right:1px solid #ddd;color:#333;text-align:center;font-size:14px;line-height:16px;cursor: pointer;}
+.nav_select{border-bottom:2px solid #cf1e2c;color:#cf1e2c}
+.nav_con_top{overflow:hidden;padding:10px 25px;border:solid #ddd;border-width:0 1px 1px}
+.nav_con_top li{float:left;display:block;overflow:hidden;padding:2px 0;width:33%;height:26px;color:#666;text-overflow:ellipsis;white-space:nowrap}
+.nav_ad{display:block;padding-top:15px;width:980px;height:180px}
+.nav_ad img{width:100%;height:100%}
+.detail_img{width:980px}
+
+
+/*累计评价*/
+.total_evaluate{margin-top:25px}
+.total_evaluate_title{padding-left:15px;width:965px;height:36px;background:#cf1e2c;color:#fff;line-height:36px}
+.total_evaluate_title span{font-weight:700}
+.total_evaluate_title b{font-size:14px}
+.total_evaluate_describe{width:978px;height:98px;border:1px solid #e5e5e5}
+.total_evaluate_describe_left{float:left;margin:10px 0;padding:8px 25px;width:70px;border-right:1px dotted #e5e5e5;color:#333;text-align:center}
+.total_evaluate_describe_left P{height:35px}
+.total_evaluate_describe_left b{color:#cf1e2c;font-size:28px}
+.total_evaluate_serve{margin:0 auto;margin-top:38px;width:400px}
+.total_evaluate_serve_list{float:left;width:80px;text-align:right}
+.total_evaluate_serve_line{width:400px;height:12px;background:#e5e5e5}
+.total_evaluate_serve_line_color{position:relative;height:12px;background:#ffc3b8}
+.sum_number{position:absolute;top:-25px;right:-15px;width:30px;height:25px;background:url(../images/PCimg/icon.png);background-position:-320px -240px;background-repeat:no-repeat;color:#fff;text-align:center;line-height:18px}
+.total_evaluate_main{width:978px;height:auto;border-right:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;border-left:1px solid #e5e5e5}
+.total_evaluate_main_title{padding-left:30px;width:948px;height:36px;background:#f8f8f8;color:#333;line-height:36px}
+.evaluate_change{float:left}
+.total_evaluate_main_title span{float:left;display:block;margin-right:30px}
+.evaluate_con{padding:15px 100px 10px 30px;border-top:1px solid #e5e5e5}
+.evaluate_con_left{float:left;width:565px}
+.evaluate_con_left p{color:#333}
+.add_review{margin-top:7px;color:#528fac}
+.evaluate_con_right{float:right;width:220px;color:#333}
+.evaluate_con_right_left{float:left}
+.evaluate_con_right_left span{color:#999}
+.evaluate_con_right_right{position:relative;float:right}
+.user_rank_icon{position:absolute;top:20px;right:0;width:30px;height:30px;background:url(../images/PCimg/icon.png);background-position:-160px -635px;background-repeat:no-repeat}
+.nav_con_top{color: #666;}
+
+.time-content{color: #272727;}

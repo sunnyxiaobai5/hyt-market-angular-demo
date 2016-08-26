@@ -1,0 +1,439 @@
+input.font_select{
+	display: block;
+    width: 100%;
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background:#FAFAFA none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+input[type=text],textarea,select {
+	color: #333333;
+	background:#FAFAFA none repeat scroll 0 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ABADB3 #E2E3EA #E2E3EA #ABADB3;
+}
+input[type=text],textarea,select {
+	padding: 2px 4px;
+	resize: none;
+}
+/*新增拼购商品*/
+a.add_shangpin{
+	display: block;
+	text-decoration:none;
+	background: #0E97D2;
+	color: #fff;
+	padding: 5px;
+	width: 100px;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 20px;
+}
+a.add_shangpin:hover{
+	text-decoration: underline;
+}
+/*商品查询容器*/
+.shangpin_select{
+	padding-left: 8px;
+}
+.shangpin_select>span{
+	margin-right: 20px;
+}
+.shangpin_select input[type="text"]{
+	height: 30px;
+}
+.bg{background: #999;}
+/*表格样式*/
+.th1{
+	width: 100px;
+	height: 70px;
+}
+.th2{
+	width: 280px;
+}
+.th3{
+	width: 80px;
+}
+th{
+	text-align: center;
+	background: #F1F1F1;
+}
+td{text-align:center;}
+td>img{width: 180px;
+	height: 75px;
+	margin: 10px 0;
+}
+td>p{
+	font-size: 12px;
+}
+td:nth-child(2){
+	width:350px;
+}
+/*操作按钮*/
+td>a{
+	margin-right: 8px;
+}
+a.a_hong{
+	color: #cf1e2c;
+}
+a.a_lv{
+	color: #3F8C2C;
+}
+a.a_hong:hover{
+	color: red;
+}
+a.a_lv:hover{
+	color: #008000;
+}
+/*底部样式*/
+.shangpin_bottom{
+	-background:pink;
+	min-height:80px;
+}
+.bottom_left{
+	float:left;
+	padding:40px 0 0 50px;
+}
+.bottom_left>button{
+	margin-left:18px;
+}
+.bottom_right{
+	padding:20px 30px 0 0;
+	float:right;
+}
+/*商品提示*/
+.shangpin_tishi{
+	font-size:28px;
+	text-align:center;
+	margin-top:180px;
+	display:none;
+}
+/*优品*/
+input[name="td_id"]{
+	width: 30px;
+	text-align: center;
+}
+div.fm_content{
+	width: 1200px;
+	font-size: 13px;
+}
+.tyx{
+	margin-bottom: 15px;
+}
+div.tyx:first-child{
+	height: 22px;
+	margin: 35px 0;
+}
+.tyx > div{
+	float: left;
+}
+.tyx:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+.tyx > div:first-child{
+	width: 60px;
+	margin-top: 1.5px;
+}
+.tyx > div:last-child{
+	width: 1060px;
+}
+@media screen and (min-width:1500px){
+	div.fm_content{
+		width: 1600px;
+	}
+	.tyx > div:last-child{
+		width: 1500px;
+	}
+}
+.fm_img_rq{
+	width: 210px;
+	height: 310px;
+	border: 1px solid #ccc;
+	position: relative;
+	background: #EEEEEE;
+	margin-bottom: 10px;
+	line-height:310px;
+	position:relative;
+	background:#f6f6f6;
+	text-align:center;
+	overflow:hidden;
+	margin-bottom: 15px;
+}
+.fm_img_rq .fm_img_mr{
+	display: block;
+	margin: 81px auto;
+}
+.fm_file{
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:130%;
+	width:100%;
+	z-index:1;
+	opacity:0;
+	filter:alpha(opacity=0);
+}  
+.youpins{
+	float: left;
+	margin: 0 30px 30px 0;
+}
+.youpins_head{
+	width: 210px;
+	height: 30px;
+	line-height: 30px;
+	background: #EEE;
+	padding-left: 10px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+}
+.youpins_head .yp_select_type{
+	margin-left: 10px;
+	width: 100px;
+}
+.youpins_head img{
+	margin-left: 18px;
+	vertical-align: -5px;
+}
+.youpins_main .fm_img_rq{
+	margin-bottom: 0;
+}
+.youpins_textarea{
+	width: 210px;
+	height: 126px;
+	padding: 5px;
+}
+.none,input.none{
+	display: none;
+}
+.youpins_video_select{
+	width: 210px;
+	margin-bottom: 10px;
+}
+select.youpins_video_select_content{
+	display: block;
+	width: 210px;
+	height: 270px;
+}
+.youpins select{
+	border: 1px solid #ccc;
+	background: #eee;
+}
+.a_add_youp{
+	position: relative;
+	display: block;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    background: #EDEDED;
+    cursor: pointer;
+    bottom: -18px;
+    text-align: center;
+  	color: #111111;
+    border-radius: 6px;
+    border: 1px solid #888;
+}
+.a_add_youp:hover{
+	 color: #111111;
+	 text-decoration: none;
+}
+.lianjie_zhi select{
+	min-width: 110px;
+}
+.lianjie_div{
+	margin-top: 10px;
+}
+.lianjie_select_rq2{
+	width: 900px;
+	padding-bottom:30px;
+}
+.lianjie_select_rq2>ul{
+	width: 900px;
+	max-height:495px;
+}
+.lianjie_select_rq2>ul:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+.lianjie_select_rq2>ul>li{
+	list-style:none;
+	float: left;
+	width: 158px;
+	height: 240px;
+	border:1px solid #CCCCCC;
+	margin: 0 20px 15px 0;
+	text-align: center;
+}
+.lianjie_select_rq2>ul>li>img{
+	width: 140px;
+	height: 140px;
+	margin:8px 0;
+}
+.lianjie_select_rq2>ul>li>p{
+	margin: 0;
+	height: 40px;
+	overflow: hidden;
+}
+.lianjie_select_rq2>ul>li>input.input_active{
+	background: #333;
+}
+.lianjie_select_rq2>ul>li>input.input_active:hover{
+	background: #333;
+}
+.lianjie_select_rq2>ul>li>input{
+	margin-top:8px;
+	width:80px;
+	height:26px;
+	border:0;
+	border-radius:5px;
+	background: #438EB9;
+	color: #fff;
+	line-height:25px;
+    cursor: pointer;
+}
+.lianjie_select_rq2>ul>li>input:hover{
+	background: #6FB3E0;
+}
+.select_content_tishi{
+	padding:130px 0;
+	font-size:28px;
+	width:900px;
+	margin:0 auto;
+}
+.lianjie_select_text{
+	margin: 10px 0;
+}
+.lianjie_select_text input[type=text]{
+	height: 30px;
+	width: 200px;
+}
+.lianjie_btn_cx{
+	margin-left: 10px;
+    width: 70px;
+    height: 28px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+	background: #EDEDED;
+	border: 1px solid #888;
+}
+.margin20{
+	margin-bottom: 30px;
+}
+.submityx{
+	margin-top: 40px;
+}
+.submityx  input[type="submit"]{
+    width: 80px;
+    height: 30px;
+    background: #438EB9;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border-radius: 6px;
+    margin: 0 20px 20px 55px;
+}
+.submityx  a{
+	display: inline-block;
+	width: 70px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+	background: #EDEDED;
+	border: 1px solid #888;
+	color: #111111;
+	vertical-align: middle;
+}
+/*优品 end*/
+/*云说*/
+.yunshuo_biaoti{
+	width: 690px;
+	height: 30px;
+}
+.fuwenben_txt{
+	width: 690px;
+	height: 400px;
+	border: 1px solid #ccc;
+}
+.yunshuo_zhaiyao{
+	width: 690px;
+	height: 100px;
+}
+.yunshuo_fm_p1{
+	margin: 4px 0 15px 0;
+}
+.yunshuo_fm_img{
+	width: 300px;
+	height: 100px;
+	display: block;
+	margin-bottom: 15px;
+}
+.yunshuo_fm_a{
+	display: inline-block;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    background: #EDEDED;
+    cursor: pointer;
+    text-align: center;
+  	color: #111111;
+    border-radius: 6px;
+    border: 1px solid #888;
+    margin-right: 20px;
+}
+.yunshuo_fm_a:hover{
+	/*background: url(images/jingg.jpg) no-repeat;
+	background-size: 80px 28px;*/
+}
+.yunshuo_fm_p2{
+	font-size: 13px;
+	margin-top: 20px;
+}
+p.ph_yunshuo input[type="checkbox"]{
+	vertical-align: -1px;
+	margin-right: 5px;
+}
+.yunshuo_tuis_p1{
+	margin-top: 3px;
+}
+
+.upload{width:300px;height:100px;line-height:100px;position:relative;background:#f6f6f6;text-align:center;color:#333;overflow:hidden;margin-bottom: 15px;}  
+#fileupload{position:absolute;bottom:0;left:0;font-size:100px;height:130%;width:100%;z-index:1;opacity:0;filter:alpha(opacity=0);}  
+
+.yunshuo_ts_a{
+	display: block;
+	width: 70px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	border: 1px solid #888888;
+	background: #EDEDED;
+	color: #111111;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+.yunshuo_ts_a:hover{
+	text-decoration: none;
+}
+.width_input{
+	width: 250px;
+	height: 30px;
+	border-radius: 10px;
+}
+/*云说 end*/
+

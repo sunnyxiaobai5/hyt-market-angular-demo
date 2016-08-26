@@ -1,0 +1,243 @@
+a:focus {
+    color: #fff;
+}
+.breadcrumbs{
+	line-height: 38px;
+	min-height: 39px;
+}
+.hz_form_title{
+	padding: 8px 0px;
+	margin-top: 8px;
+}
+.hz_putxt{
+	width: 250px;
+}
+.hz_btn{
+	padding: 0px 20px;
+    height: 30px;
+    background: #438EB9;
+    color: #fff;
+    border-radius: 3px;
+    border: 0;
+    line-height: 30px;
+}
+.hz_btn:hover{
+	background-color: #286090;
+}
+.hz_abtn{
+	padding: 7px 20px;
+}
+.hz_abtn:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.hz_addbtn{
+	margin-left: 15px;
+}
+.hz_float_right{
+	float: right;
+}
+.table_ditch{
+	margin-top: 20px;
+	width: 100%;
+}
+.table_ditch input[type="text"],.table_ditch input[type="password"],.table_ditch select{
+	height: 34px;
+	min-width: 200px;
+}
+.table_ditch tr td:first-child{
+	width:8%;
+	text-align: right;
+	padding-right: 15px;
+}
+.table_ditch tr td:last-child{
+	text-align: left;
+}
+.table_ditch tr{
+	height: 60px;
+}
+.ditch_name{
+	width: 406px;
+}
+.select_put{
+	width: 150px;
+}
+.ticket_table{
+	width: 50%;
+}
+.ticket_table tr td:first-child{
+	width: 70%;
+	text-align: left;
+}
+.ticket_table tr{
+	height: 32px;
+}
+.hz_beizhu{
+	height: 80px;
+	width: 50%;
+}
+.tuikuan_select{
+	margin: 20px 0px;
+}
+.tuikuan_select select{
+	background-color: #fff;
+}
+.tuikuan_select input{
+	height: 30px;
+	border-radius: 3px;
+	background-color: #fff;
+}
+select{
+	border-radius: 0px;
+}
+.tuikuan_select span{
+	margin-right: 10px;
+}
+.li_active>a{
+    background-color: #FFF!important;
+}
+.li_active>a:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    max-width: 3px;
+    overflow: hidden;
+    background-color: #3382af;
+}
+/*注册送券*/
+.register_on{
+	height: 60px;
+	line-height: 60px;
+	padding-left: 10px;
+	font-size: 16px;
+}
+.register_check{
+	height: 60px;
+	line-height: 60px;
+	padding-left: 10px;
+	font-size: 16px;
+}
+.register_check select{
+	width: 240px;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 3px;
+}
+.register_btn{
+	margin-top: 50px;
+	padding-left: 90px;
+}
+.check_one{
+	font-size: 16px;
+	padding-left: 90px;
+	line-height: 60px;
+}
+.check_one input[type="checkbox"]{
+	margin-right:5px;
+}
+.check_one input[type="button"]{
+	margin:0px 5px;
+}
+.man_dor{
+	height: 30px;
+	width: 100px;
+	margin:0px 5px;
+}
+.check_goods{
+	/*display: none;*/
+}
+.check_number{
+	color: red;
+	padding: 0px 3px;
+}
+.check_img_list{
+	/*height: 120px;*/
+}
+.check_img_list ul li{
+	list-style: none;
+	float: left;
+	width: 120px;
+	height: 120px;
+	position: relative;
+	margin-right: 20px;
+}
+.check_img_list ul li img{
+	width: 100%;
+	height: 100%;
+}
+.check_img_list ul li span{
+	text-align: center;
+	color: #ffffff;
+	height: 26px;
+	line-height: 26px;
+	position: absolute;
+	width: 120px;
+	bottom: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.5);
+	font-size: 12px;
+	cursor:pointer;
+}
+.edtir{
+	border:1px solid #ddd;
+	width: 600px;
+	min-height: 300px;
+}
+.clear{
+	clear: both;
+}
+input[type=text], textarea, select {
+    color: #333333;
+    background: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d5d5d5;
+}
+.edtir_save{
+	padding:15px 0px; 
+}
+/*开关*/
+#div_off{
+    width: 42px;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+#div_on{
+    width: 17px;
+    height: 17px;
+    border-radius: 18px;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+}
+.open1{
+    background: rgba(67,142,185,0.8);
+}
+.open2{
+    top: 1px;
+    right: 1px;
+}
+.close1{
+    background: rgba(255,255,255,0.4);
+    border:2px solid rgba(0,0,0,0.15);
+    border-left: transparent;
+}
+.close2{
+    left: 0px;
+    top: -1px;
+    border:1px solid rgba(0,0,0,0.1);
+}
+.check_off{
+	display: inline-block;
+	position: relative;
+	top: 4px;
+}
+.check_off input{
+	display: none;
+}

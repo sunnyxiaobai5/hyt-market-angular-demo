@@ -1,0 +1,168 @@
+<link rel="stylesheet" href="assets/css/pg_shangpin.css"/>
+<link rel="stylesheet" href="assets/css/youhuiquan.css"/>
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+
+<body>
+<div class="main-content min_width">
+    <div class="breadcrumbs" id="breadcrumbs">
+        <div class="nav_suoyin">
+            <span>
+                <i class=""></i>
+                <a href="javascript:void(0)" class="cleardecor">优品</a>
+            </span>
+            >
+            <span>
+                <i class=""></i>
+                <a href="optproductManage.html" class="cleardecor">优品管理</a>
+            </span>
+        </div>
+    </div>
+    <div class="shangpin_content">
+        <!-- 右侧顶部内容 -->
+        <a href="optproductEdit.html" class="add_shangpin">新增优品</a>
+        <p class="pingou_title">优品查询</p>
+        <P class="shangpin_select">
+            <span><input type="text" placeholder="优品关键字"></span>
+            <input type="button" value="查询" class="td_btn">
+        </P>
+        <!-- 右侧顶部内容 end-->
+        <!-- 右侧主要内容 -->
+        <p class="pingou_title">优品列表</p>
+        <div class="shangpin_tishi">
+            查找的商品没找到，请重新查找！
+        </div>
+        <table class="table table-bordered">
+            <thead>
+            <th>排序</th>
+            <th>名称</th>
+            <th>添加时间</th>
+            <th>操作</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td><input type="text" value="1" name="td_id"></td>
+                <td>红毛烧52度纯醸</td>
+                <td>2016-02-02 22:22:22</td>
+                <td>
+                    <a href="#" class=" ">编辑&nbsp;|</a>
+                    <a href="javascript:void(0)" class="sc_btn">删除</a>
+                </td>
+            <tr>
+            <tr>
+                <td><input type="text" value="2" name="td_id"></td>
+                <td>红毛烧52度纯醸</td>
+                <td>2016-02-02 22:22:22</td>
+                <td>
+                    <a href="#" class=" ">编辑&nbsp;|</a>
+                    <a href="javascript:void(0)" class="sc_btn">删除</a>
+                </td>
+            <tr>
+            <tr>
+                <td><input type="text" value="3" name="td_id"></td>
+                <td>红毛烧52度纯醸</td>
+                <td>2016-02-02 22:22:22</td>
+                <td>
+                    <a href="#" class=" ">编辑&nbsp;|</a>
+                    <a href="javascript:void(0)" class="sc_btn">删除</a>
+                </td>
+            <tr>
+            <tr>
+                <td><input type="text" value="4" name="td_id"></td>
+                <td>红毛烧52度纯醸</td>
+                <td>2016-02-02 22:22:22</td>
+                <td>
+                    <a href="#" class=" ">编辑&nbsp;|</a>
+                    <a href="javascript:void(0)" class="sc_btn">删除</a>
+                </td>
+            <tr>
+            <tr>
+                <td><input type="text" value="5" name="td_id"></td>
+                <td>红毛烧52度纯醸</td>
+                <td>2016-02-02 22:22:22</td>
+                <td>
+                    <a href="#" class=" ">编辑&nbsp;|</a>
+                    <a href="javascript:void(0)" class="sc_btn">删除</a>
+                </td>
+            <tr>
+            </tbody>
+        </table>
+        <!-- 右侧主要内容 end -->
+        <!-- 右侧底部内容 -->
+        <div class="shangpin_bottom">
+            <div class="bottom_right dingdan_bottom_suoyin">
+                <!-- 结构索引 -->
+                <ul class="pagination">
+                    <li class="disabled">
+                        <a href="#">
+                            《
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            》
+                        </a>
+                    </li>
+                </ul>
+                <!-- 结构索引 end-->
+            </div>
+        </div>
+        <!-- 右侧底部内容结束 -->
+    </div>
+</div>
+
+<!-- 删除提示模态窗口 -->
+<div class="modal fade" id="scqrmodal" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content ljff_max_width">
+            <div class="modal-body">
+                <div class="panel-body text-center">
+                    确定要删除此记录吗？
+                </div>
+            </div>
+            <div class="modal-footer modal_dibu">
+                <button type="button" class="btn btn-primary">确定</button>
+                <button type="button" class="btn btn-default sc_quxiao">取消</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- 删除提示模态窗口 end-->
+
+<!--[if lte IE 8]>
+<script src="assets/js/excanvas.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+    $(function () {
+        $('.sc_btn').click(function () {
+            $('#scqrmodal').modal();
+        });
+        $('.sc_quxiao').click(function () {
+            $('#scqrmodal').modal('hide');
+        });
+    });
+</script>

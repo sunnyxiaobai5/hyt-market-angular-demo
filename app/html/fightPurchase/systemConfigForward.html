@@ -1,0 +1,67 @@
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="assets/css/pg_wenan.css"/>
+
+<div class="main-content min_width">
+    <div class="breadcrumbs" id="breadcrumbs">
+        <div class="nav_suoyin">
+            <span>
+                <i class=""></i>
+                <a href="#" class="cleardecor">拼购</a>
+            </span>
+            >
+            <span>文案设置</span>
+        </div>
+    </div>
+    <!-- 右侧主要内容 -->
+    <div class="wenan_content">
+        <form action="#">
+            <table class=" table-hover">
+                <tbody>
+                <tr>
+                    <td class="text-right td_font">组团提示中：</td>
+                    <td class="td_width"><input type="text" placeholder="最多支持20个字"></td>
+                    <td class="td_font text-left">默认前缀为“还差x人”</td>
+                </tr>
+                <tr>
+                    <td class="text-right td_font">组团成功提示中：</td>
+                    <td class="td_width"><input type="text" placeholder="最多支持20个字"></td>
+                    <td class="td_font text-left">用户拼购详情页提示团当前状态</td>
+                </tr>
+                <tr>
+                    <td class="text-right td_font">组团失败提示中：</td>
+                    <td class="td_width"><input type="text" placeholder="最多支持20个字"></td>
+                    <td class="td_font text-left">用户拼购详情页提示团当前状态</td>
+                </tr>
+                <tr>
+                    <td class="">&nbsp;</td>
+                    <td><input type="submit" value="保存" class="td_btn"></td>
+                    <td>&nbsp;</td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <!-- 右侧主要内容 end-->
+</div>
+
+<!--[if lte IE 8]>
+<script src="assets/js/excanvas.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+    $(function () {
+        //弹出个人菜单
+        $('.nav_2').bind('click', function (e) {
+            $('.nav_shezhi').toggle();
+            e.stopPropagation();//阻止点击事件冒泡到document
+        });
+        $(document).bind('click', function () {
+            $('.nav_shezhi').hide();
+        });
+
+    })
+</script>

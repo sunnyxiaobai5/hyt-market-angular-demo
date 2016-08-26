@@ -1,0 +1,352 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dth HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dth">
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>商品管理</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/ace.min.css" />
+<link rel="stylesheet" href="css/pg_shangpin.css" />
+<link rel="stylesheet" href="css/style.css" />
+<!-- <link rel="stylesheet" href="css/ace-rtl.min.css" /> -->
+<link rel="stylesheet" href="css/zz.css" />
+<!--[if lte IE 8]>
+  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+<style>
+	.col-sm-1,.col-sm-10,.col-sm-3.col-sm-9{padding-right: 0;}
+	.col-sm-3,.col-sm-9{padding-left: 0;}
+	
+</style>
+
+</head>
+
+<body>
+<!-- head -->
+<div class="nav_daohang">
+	<div class="nav_1"><a href="#">营销系统</a></div>
+	<div class="nav_content">
+		<a class="a_active" href="pg_setwenan.html">拼购</a>
+		<a href="youpin_bgo.html">优品</a>
+		<a href="yunshuo_bgo.html">云说</a>
+		<a href="#">抢购</a>
+		<a href="youhuiquan_bgo.html">优惠券</a>
+	</div>
+	<div class="nav_2">
+		<img src="images/PCimg/icon_sb.jpg">
+		<span>
+			好运妹一号<small></small>
+		</span>
+		<img class="dsj" src="images/dsj.png">
+		<ul class="nav_shezhi">
+			<li><a href="#"><img src="images/shezhi.png">设置</a></li>
+			<li><a href="#"><img src="images/zhuye.png">主页</a></li>
+			<li><a href="#"><img src="images/tuichu.png">退出</a></li>
+		</ul>
+	</div>
+	<div class="nav_clear"></div>
+</div>
+<!--end head -->
+
+<div class="main-container min__width" id="main-container">
+	<!--左侧菜单 Start-->
+	<div class="main-container-inner">
+		<!-- <a class="menu-toggler" id="menu-toggler" href="#">
+			<span class="menu-text"></span>
+		</a> -->
+	<div class="sidebar" id="sidebar">
+			<ul class="nav nav-list">
+				<li>
+					<a href="pg_setwenan.html" class="dropdown-toggle">
+						<i class="icon-dashboard"></i>
+						<span class="menu-text"> 文案设置 </span>
+					</a>
+				</li>
+				<li>
+					<a href="pg_shangpin.html">
+						<i class="icon-text-width"></i>
+						<span class="menu-text"> 商品管理 </span>
+					</a>
+				</li>
+
+				<li>
+					<a href="pg_dingdan.html" class="dropdown-toggle">
+						<i class="icon-desktop"></i>
+						<span class="menu-text"> 拼购订单 </span>
+					</a>
+				</li>
+				<li>
+					<a href="pg_tuikuantongji.html" class="dropdown-toggle">
+						<i class="icon-desktop"></i>
+						<span class="menu-text"> 退款统计 </span>
+					</a>
+				</li>
+				<li class="">
+					<a href="#">
+						<i class="icon-dashboard"></i>
+						<span class="menu-text"> 数据统计 </span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--左侧菜单 End-->
+
+	<div class="main-content min_width">
+			<div class="breadcrumbs" id="breadcrumbs">
+				<!-- <script type="text/javascript">
+					try {
+						ace.settings.check('breadcrumbs', 'fixed')
+					} catch (e) {}
+				</script>
+				 -->
+				 <div class="nav_suoyin">
+					<span>
+						<i class=""></i>
+						<a href="#" class="cleardecor">拼购</a>
+					</span>
+						>
+					<span>商品管理</span>
+				</div>
+			 </div>
+			<div class="shangpin_content">
+				<!-- 右侧顶部内容 -->
+				<a href="shangpin_select.html" class="add_shangpin cleardecor">新增拼购商品</a>
+				<!-- class="cleardecor" -->
+				<p class="pingou_title">商品查询</p>
+				<P class="shangpin_select">
+					<span>商品查询：<input type="text" placeholder="商品关键字"></span>
+					<span>按启用状态：<select>
+									<option>全部状态</option>
+									<option>启用</option>
+									<option>停用</option>
+								</select></span>
+					<span>按置顶状态：
+								<select>
+									<option>全部状态</option>
+									<option>置顶</option>
+									<option>非置顶</option>
+								</select></span>
+					<input type="button" value="查询" class="td_btn">
+				</P>
+					<!-- 右侧顶部内容 end-->
+				<!-- 右侧主要内容 -->
+				<p class="pingou_title">商品列表</p>
+				<div class="shangpin_tishi">
+					查找的商品没找到，请重新查找！
+				</div>
+				<table id="table_shangpin" class="table-bordered">
+					<tbody>
+						<tr>
+							<th rowspan="2" class="th1">选择</th>
+							<th rowspan="2" class="th2">商品</th>
+							<th colspan="4" class="">团1</th>
+							<th colspan="4" class="">团2</th>
+							<th rowspan="2" class="th2">操作</th>
+						</tr>
+						<tr>
+							<th class="th3">团信息</th>
+							<th class="th3">成团数</th>
+							<th class="th3">组团中</th>
+							<th class="th3">剩余库存</th>
+							<th class="th3">团信息</th>
+							<th class="th3">成团数</th>
+							<th class="th3">组团中</th>
+							<th class="th3">剩余库存</th>
+						</tr>
+						<tr>
+							<td><input name="checkbox1" type="checkbox"></td>
+							<td>
+								<img src="images/img.png" alt="">
+								<p>【直降13元】红毛烧52度</p>
+							</td>
+							<td>3人团<br>￥20.00</td>
+							<td>0</td>
+							<td>3</td>
+							<td>3</td>
+							<td>6人团<br>￥20.00</td>
+							<td>0</td>
+							<td>3</td>
+							<td>3</td>
+							<td>
+								<a href="#" class="cleardecor">编辑</a>|
+								<a href="#" class="shangpin_remove cleardecor">删除</a>|
+								<a href="#" class="a_hong qy_ty cleardecor">停用</a><br>
+								<a href="#" class="a_lv zd_fzd cleardecor">置顶</a>
+								<a href="#" class="cleardecor">复制地址</a>
+							</td>
+						</tr>
+						<tr>
+							<td><input name="checkbox1" type="checkbox"></td>
+							<td>
+								<img src="images/img.png" alt="">
+								<p>【直降13元】红毛烧52度【直降13元】红毛烧52度【直降13元】红毛烧52度【直降13元】红毛烧52度【直降13元】红毛烧52度</p>
+							</td>
+							<td>4人团<br>￥20.00</td>
+							<td>0</td>
+							<td>3</td>
+							<td>3</td>
+							<td>5人团<br>￥20.00</td>
+							<td>0</td>
+							<td>3</td>
+							<td>3</td>
+							<td>
+								<a href="#" class="cleardecor">编辑</a>|
+								<a href="#" class="shangpin_remove cleardecor">删除</a>|
+								<a href="#" class="a_lv qy_ty cleardecor">启用</a><br>
+								<a href="#" class="a_hong zd_fzd cleardecor">取消置顶</a>
+								<a href="#" class="cleardecor">复制地址</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- 右侧主要内容 end -->
+				<!-- 右侧底部内容 -->
+				<div class="shangpin_bottom">
+					<div class="bottom_left">
+						<input type="checkbox" id="qx_check"><label for="qx_check">全选</label>
+						<button class="piliang_remove">批量删除</button>
+					</div>
+					<div class="bottom_right dingdan_bottom_suoyin">
+						<!-- 结构索引 -->
+							<ul class="pagination">
+									<li class="disabled">
+										<a href="#">
+											《
+										</a>
+									</li>
+									<li class="active">
+										<a href="#">1</a>
+									</li>
+
+									<li>
+										<a href="#">2</a>
+									</li>
+
+									<li>
+										<a href="#">3</a>
+									</li>
+
+									<li>
+										<a href="#">4</a>
+									</li>
+
+									<li>
+										<a href="#">5</a>
+									</li>
+
+									<li>
+										<a href="#">
+											》
+										</a>
+									</li>
+							</ul>
+					<!-- 结构索引 end-->
+					</div>
+				</div>
+				<!-- 右侧底部内容结束 -->
+			</div>				
+	</div>
+</div>
+
+		
+		
+		
+<script src="js/jquery.min.js"></script>	
+<script src="js/bootstrap.min.js"></script>
+
+<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+
+<script type="text/javascript">
+$(function(){
+	//点击切换文本内容
+	$('.qy_ty').click(function(){
+		var _txt=$(this).text();
+		if(_txt=='停用'){
+			$(this).text('启用');
+			$(this).removeClass('a_hong').addClass('a_lv');
+		}else{
+			$(this).text('停用');
+			$(this).removeClass('a_lv').addClass('a_hong');
+		}
+		
+	});
+	$('.zd_fzd').click(function(){
+		var _txt=$(this).text();
+		if(_txt=='取消置顶'){
+			$(this).text('置顶');
+			$(this).removeClass('a_hong').addClass('a_lv');
+		}else{
+			$(this).text('取消置顶');
+			$(this).removeClass('a_lv').addClass('a_hong');
+		}
+	});
+	//弹出个人菜单
+	$('.nav_2').bind('click',function(e){
+		$('.nav_shezhi').toggle();
+		e.stopPropagation();//阻止点击事件冒泡到document
+	});
+	$(document).bind('click',function(){
+		$('.nav_shezhi').hide();
+	});
+	
+	//用on事件给整个document文档中的.shangpin_remove类绑定一个点击事件：效果是点击删除一行,执行后续操作
+	$(document).on('click','.shangpin_remove',function(){
+		var $this=$(this);
+		$this.closest('tr').remove();
+		showhide();
+	});
+	//点击全选按钮，选取到所有的复选框+批量删除
+	var	$quanxuan=$('#qx_check');
+	var $td_ckbox=$('#table_shangpin tbody tr td:first-child input[type=checkbox]'); 
+	$quanxuan.bind('click',function(){
+			 $td_ckbox.each(function(){
+			 $(this).prop("checked",!$(this).prop("checked"));
+			});
+	});
+	$('.piliang_remove').click(function(){
+		  $td_ckbox.each(function(){
+			if($(this).is(':checked')==true)
+		  	{
+		  		$(this).closest('tr').remove();
+		  		showhide();
+		 	}
+		 });
+		 
+	});
+	
+ 	function showhide()
+ 	{
+ 		//获取table，判断当table中tr为1的时候隐藏table，否则就显示
+	   var $table=$('#table_shangpin');
+	   var $tr=$('#table_shangpin tbody tr');
+	   var $sp_bottom=$('.shangpin_bottom');
+	   var $shangpin_tishi=$('.shangpin_tishi');
+	  	//隐藏table显示提示语句，
+	   if($tr.length<=2){
+	   		$table.hide();
+	   		$sp_bottom.hide();
+	   		$shangpin_tishi.show();
+	   }else{
+	   		$table.show();
+	   		$sp_bottom.show();
+	   		$shangpin_tishi.hide()
+	   }
+ 	}
+})
+</script>
+
+	</body>
+
+</html>

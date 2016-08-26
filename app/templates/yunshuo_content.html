@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dth HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dth">
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>云说管理</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/ace.min.css" />
+<link rel="stylesheet" href="css/pg_shangpin.css" />
+<link rel="stylesheet" href="css/style.css" />
+<!-- <link rel="stylesheet" href="css/ace-rtl.min.css" /> -->
+<link rel="stylesheet" href="css/zz.css" />
+<!--[if lte IE 8]>
+  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- head -->
+<div class="nav_daohang">
+	<div class="nav_1"><a href="#">营销系统</a></div>
+	<div class="nav_content">
+		<a class="" href="pg_setwenan.html">拼购</a>
+		<a href="youpin_bgo.html">优品</a>
+		<a href="yunshuo_bgo.html">云说</a>
+		<a href="#">抢购</a>
+		<a href="youhuiquan_bgo.html">优惠券</a>
+	</div>
+	<div class="nav_2">
+		<img src="images/PCimg/icon_sb.jpg">
+		<span>
+			好运妹一号<small></small>
+		</span>
+		<img class="dsj" src="images/dsj.png">
+		<ul class="nav_shezhi">
+			<li><a href="#"><img src="images/shezhi.png">设置</a></li>
+			<li><a href="#"><img src="images/zhuye.png">主页</a></li>
+			<li><a href="#"><img src="images/tuichu.png">退出</a></li>
+		</ul>
+	</div>
+	<div class="nav_clear"></div>
+</div>
+<!--end head -->
+
+<div class="main-container min__width" id="main-container">
+	<!--左侧菜单 Start-->
+	<div class="main-container-inner">
+		<!-- <a class="menu-toggler" id="menu-toggler" href="#">
+			<span class="menu-text"></span>
+		</a> -->
+	<div class="sidebar" id="sidebar">
+			<ul class="nav nav-list">
+				<li>
+					<a href="yunshuo_bgo.html" class="dropdown-toggle">
+						<i class="icon-dashboard"></i>
+						<span class="menu-text"> 云说管理 </span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--左侧菜单 End-->
+
+	<div class="main-content min_width">
+			<div class="breadcrumbs" id="breadcrumbs">
+				 <div class="nav_suoyin">
+					<span>
+						<i class=""></i>
+						<a href="javascript:void(0)" class="cleardecor">云说</a>
+					</span>
+						>
+					<span>
+						<i class=""></i>
+						<a href="yunshuo_bgo.html" class="cleardecor">云说管理</a>
+					</span>
+						>
+					<span>
+						<i class=""></i>
+						<a href="javascript:void(0)" class="cleardecor">云说新增</a>
+					</span>
+				</div>
+			 </div>
+			<div class="shangpin_content">
+				<!-- 右侧顶部内容 -->
+				<p class="pingou_title">云说新增</p>
+				<!-- 右侧顶部内容 end-->
+				<!-- 右侧主要内容 -->
+				<form method="post" id="ListForm" action="">
+					<div class="fm_content tyx">
+						<div>标题：</div>
+						<div>
+							<input type="text" placeholder="40个字以内" maxlength="40" class="yunshuo_biaoti"/>
+						</div>
+					</div>
+					<div class="fm_content tyx">
+						<div>内容：</div>
+						<div>
+							<div class="fuwenben_txt">
+								
+							</div>
+						</div>
+					</div>
+					<div class="fm_content tyx">
+						<div>摘要：</div>
+						<div>
+							<textarea class="yunshuo_zhaiyao" maxlength="54" placeholder="选填，54个字以内"></textarea>
+						</div>
+					</div>
+					<div class="fm_content tyx">
+						<div>封面：</div>
+						<div class="fj_div">
+							<p class="yunshuo_fm_p1">可选,建议尺寸：750像素 X 300像素</p>
+							<div id="upload" class="upload">  
+							    <img src="images/img.png" alt="" id="yunshuo_fm_img" class="yunshuo_fm_img">
+							    <input type="file" id="fileupload" size="100" />  
+							</div>  
+							<p>
+								<input type="button"  class="yunshuo_fm_a" value="上传">
+								<input type="button"  class="yunshuo_fm_a ce_shanchu" value="删除">	
+							</p>
+							<p class="yunshuo_fm_p2 ph_yunshuo">
+								<input type="checkbox"  id="yunshuo_fm_check"><label for="yunshuo_fm_check">封面图片显示在正文首要位置</label>
+							</p>
+						</div>
+					</div>
+					<div class="fm_content tyx">
+						<div>推送：</div>
+						<div>
+							<p class="yunshuo_tuis_p1 ph_yunshuo">
+								<input type="checkbox"  id="yunshuo_ts_check"><label for="yunshuo_ts_check">勾选后立即推送到客户端，请慎重选择</label>
+							</p>
+						</div>
+					</div>
+					<div class="fm_content tyx">
+						<div>推送：</div>
+						<div>
+							<p class="yunshuo_tuis_p1">
+							已推送
+							</p>
+						</div>
+					</div>
+					<div class="submityx margintop">
+						<input type="submit" value="发布"/>
+						<a href="javascript:history.go(-1)">返回</a>
+					</div>
+				</form>
+				<!-- 右侧主要内容 end -->
+				<!-- 右侧底部内容 -->
+			
+				<!-- 右侧底部内容结束 -->
+			</div>				
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>	
+<script src="js/bootstrap.min.js"></script>
+
+<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+
+<script type="text/javascript">
+				$('.ce_shanchu').click(function(){
+					$('#yunshuo_fm_img').attr('src','images/img.png');
+					var $pj_file=$('.upload').children('#fileupload');
+					var docObj=$pj_file[0];
+					console.log(docObj);
+                    //清空选中的文件信息
+                    docObj.outerHTML=docObj.outerHTML;
+				});
+				$('.submityx input[type=submit]').click(function(){
+					window.location.href="yunshuo_bgo.html";
+					//去除submit的提交效果
+					return false;
+				});
+				//添加图片
+               //图片上传预览
+            $(document).on('change','#fileupload',function(){
+            	setImagePreview('fileupload','yunshuo_fm_img','upload');//(为input file类型元素的id,图片id,图片容器id)
+            });
+			// $("#fileupload").change(function(){
+			// 	setImagePreview('fileupload','yunshuo_fm_img','upload');//(为input file类型元素的id,图片id,图片容器id)
+			// });
+			function setImagePreview(file,img,imgrongqi) {
+				var docObj=document.getElementById(file);
+				var imgObjPreview=document.getElementById(img);
+				if(docObj.files &&docObj.files[0])
+				{
+				imgObjPreview.style.display = 'block';
+				imgObjPreview.style.width = '300px';
+				imgObjPreview.style.height = '100px'; 
+				imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+				}
+				else
+				{
+				docObj.select();
+				var imgSrc = document.selection.createRange().text;
+				var localImagId = document.getElementById(imgrongqi);
+				localImagId.style.width = "300px";
+				localImagId.style.height = "100px";
+				try{
+				localImagId.style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+				localImagId.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+				}
+				catch(e)
+				{
+				alert("您上传的图片格式不正确，请重新选择!");
+				return false;
+				}
+				imgObjPreview.style.display = 'none';
+				document.selection.empty();
+				}
+				return true;
+			}	
+				
+</script>
+
+	</body>
+
+</html>

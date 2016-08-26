@@ -1,0 +1,45 @@
+td.td_xwidthlen{
+	width: 150px;
+}
+td.td_caozuo{
+	width: 180px;
+}
+.yeshu_len{
+	font-size: 15px;
+	vertical-align: -45px;
+}
+.quanbao_btn{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	margin-top: 20px;
+	border-radius: 6px;
+	line-height: 30px;
+	text-align: center;
+	color: #333;
+    background-color: #fff;
+    border:1px solid #ccc;
+}
+a.quanbao_btn_active{
+	color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    text-decoration: none;
+}
+a.quanbao_btn_active:hover{
+    background-color: #286090;
+    border-color: #204d74;
+}
+input.width_xx{
+	width: 250px;
+	padding-left: 5px;
+}
+/*模态窗口*/
+div.modal_dibu{
+	text-align: center;
+	background: #fff;
+}
+.ljff_max_width{
+	max-width: 400px;
+    margin: 0 auto;
+}

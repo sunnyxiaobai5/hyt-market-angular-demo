@@ -40,9 +40,7 @@
                 .state('home', {
                     url: '/home',
                     templateUrl: 'html/home/home.html',
-                    controller: function ($scope, Menu) {
-                        $scope.menus = Menu.getModules();
-                    },
+                    controller: 'HomeController',
                     data: {
                         pageTitle: "营销系统首页"
                     }
@@ -77,7 +75,6 @@
                         }
                     }
                 });
-
         }]);
 })();
 

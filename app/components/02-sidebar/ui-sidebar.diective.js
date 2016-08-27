@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('myApp.utils').directive('uiSidebar', ['$state', function ($state) {
+    angular.module('myApp.utils').directive('uiSidebar', ['$state', 'Menu', function ($state, Menu) {
         return {
             scope: {}, // {} = isolate, true = child, false/undefined = no change
             restrict: 'AE',
@@ -43,23 +43,7 @@
 
 
                 $scope.$watch(getSystemState, function (newValue, oldValue) {
-                    switch (newValue.name) {
-                        case 'fightPurchase':
-                            $scope.menus = menus[0];
-                            break;
-                        case 'optproduct':
-                            $scope.menus = menus[1];
-                            break;
-                        case 'cloudSaid':
-                            $scope.menus = menus[2];
-                            break;
-                        case 'nothing':
-                            $scope.menus = menus[3];
-                            break;
-                        case 'nothing':
-                            $scope.menus = menus[4];
-                            break;
-                    }
+                    $scope.menus = Menu.getSidebar(newValue.name);
                 });
             }
         };

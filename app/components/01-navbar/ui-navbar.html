@@ -2,11 +2,7 @@
 <div class="nav_daohang">
     <div class="nav_1"><a href="#">营销系统</a></div>
     <div class="nav_content">
-        <a ui-sref-active="active" ui-sref="fightPurchase">拼购</a>
-        <a ui-sref-active="active" ui-sref="optproduct">优品</a>
-        <a ui-sref-active="active" ui-sref="cloudSaid">云说</a>
-        <a ui-sref-active="active" ui-sref="nothing">抢购</a>
-        <a ui-sref-active="active" ui-sref="nothing">优惠券</a>
+        <a ui-sref-active="active" ui-sref="{{menu.state}}" ng-repeat="menu in menus">{{menu.name}}</a>
     </div>
     <div class="nav_2">
         <img ng-src="assets/images/PCimg/icon_sb.jpg">

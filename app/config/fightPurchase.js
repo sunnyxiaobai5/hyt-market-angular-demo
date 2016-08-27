@@ -11,10 +11,7 @@
             $stateProvider
                 .state('fightPurchase', {
                     parent: 'main',
-                    url: '/fightPurchase',
-                    data: {
-                        stateToGo: 'fightPurchase.menu_1'
-                    }
+                    url: '/fightPurchase'
                 })
                 .state('fightPurchase.menu_1', {
                     parent: 'fightPurchase',

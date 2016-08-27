@@ -39,7 +39,10 @@
             $stateProvider
                 .state('home', {
                     url: '/home',
-                    templateUrl: 'home.html',
+                    templateUrl: 'html/home/home.html',
+                    controller: function ($scope, Menu) {
+                        $scope.menus = Menu.getModules();
+                    },
                     data: {
                         pageTitle: "营销系统首页"
                     }
